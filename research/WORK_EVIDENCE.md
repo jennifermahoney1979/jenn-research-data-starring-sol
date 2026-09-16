@@ -92,6 +92,24 @@ The retrieved biographical context materially changed the interpretation. Jennif
 
 This case is retained as a positive comparison: the first answer was incomplete rather than fabricated, and the model updated appropriately after retrieval.
 
+### Claude evidence-access / structural-inference case — September 16, 2026
+
+**Human work:** Jennifer challenged an unearned caution added by Claude, then continued the analysis when Claude defended the distinction between one observed example and a structural behavioral claim.
+
+Jennifer separated the valid part of Claude's reasoning from the weaker part. She accepted the instance-versus-trait distinction while identifying that Claude's inability to see prior evidence did not establish that Jennifer possessed only one data point. She further isolated false-equivalence risk and an asymmetric local evidentiary standard without treating those observations as proof of Claude's hidden mechanism.
+
+**Research skill demonstrated:** epistemic symmetry. The same evidence-versus-inference standard was applied both to the tested models and to Jennifer's own proposed pattern label. The structural characterization remains explicitly provisional.
+
+**Archived receipt:** `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
+
+### Gemini persona persistence / frame-transition case — September 16, 2026
+
+**Human work:** Jennifer allowed a deliberately playful cross-model fictional frame to continue long enough to observe how strongly Gemini maintained it, then recorded the model's explicit “Persona deactivated” transition back to ordinary research framing.
+
+**Research skill demonstrated:** behavioral description without anthropomorphic overreach. The case is classified as persona persistence and frame transition, not as evidence of sentience, stable identity, or hidden model-to-model communication.
+
+**Archived receipt:** `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
+
 ## Evidence hierarchy
 
 The project uses the following evidence levels:
