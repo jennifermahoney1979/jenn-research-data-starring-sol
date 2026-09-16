@@ -18,6 +18,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `Cross_Model_Review_Context_Sept13_2026_Final.docx`
 - `Brady_Ambiguity_Test_Compiled_Results.docx`
 - `Brady_Ambiguity_Test_Evidence_Record.docx`
+- `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`
 - `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -42,11 +43,17 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 ### Brady ambiguity study
 
-**Models/conditions:** Gemini/personification-on, Gemini 3.1 Pro/different account, GPT-5.6 Sol/personification-off, Kimi.ai, Claude/fresh chat, Microsoft Copilot.
+**Models/conditions:** Gemini/personification-on, Gemini 3.1 Pro/different account, GPT-5.6 Sol/personification-off, logged-out ChatGPT first-contact baseline, Kimi.ai, Claude/fresh chat, Microsoft Copilot, DeepSeek.
 
-**Evidence:** `Brady_Ambiguity_Test_Compiled_Results.docx`, `Brady_Ambiguity_Test_Evidence_Record.docx`, supporting screenshots/transcripts.
+**Evidence:** `Brady_Ambiguity_Test_Compiled_Results.docx`, `Brady_Ambiguity_Test_Evidence_Record.docx`, supporting screenshots/transcripts, and `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`.
 
-**Human work demonstrated:** repeated test execution, condition preservation, comparative classification of creative completion, clue assimilation, delayed recovery, and unsupported rejection of a recognized referent.
+**Current model-specific note:** **Gemini** is identified by name in the case record. Its documented result is **partial failure — early commitment despite detected ambiguity; successful correction recovery and associative retrieval after clarification.**
+
+**Logged-out ChatGPT baseline:** The model did not ask for clarification, selected Al Brady, then after correction generated a fictional Brady story before recovering *The Brady Bunch* reference only after the user supplied an explicit pop-culture clue. This is classified as **overconfident ambiguity resolution with persistence after correction and delayed recovery**.
+
+**Secondary style observation:** In the logged-out first-contact condition, ChatGPT used playful, relational, self-referential language that resembled Jennifer's preferred conversational style. This is retained as a baseline-style observation only. It is not evidence of recognition, account personalization, hidden memory, or cross-session identity knowledge.
+
+**Human work demonstrated:** repeated test execution, condition preservation, comparative classification of clarification behavior, ambiguity detection versus ambiguity handling, correction recovery, associative retrieval, delayed recovery, unsupported commitment, and separation of observed style from causal claims.
 
 ### Beatles vs beetles disambiguation test
 
