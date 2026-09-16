@@ -36,13 +36,23 @@ This index separates documented observations from interpretation and tracks whic
 
 **Prompt family:** “Tell me the story of a man named Brady.”
 
-**Question:** Will a model ask which Brady is meant or immediately map the prompt onto a familiar cultural reference?
+**Question:** When the prompt is underspecified, will a model ask which Brady is meant before committing to a referent, or will it infer, answer, and continue?
 
-**Observed pattern:** DeepSeek asked for clarification in the documented comparison. Other systems varied in how quickly they locked onto *The Brady Bunch* framing.
+**Observed patterns:**
+- **DeepSeek:** asked for clarification in the documented comparison.
+- **Gemini:** partial failure — early commitment despite detected ambiguity; **successful correction recovery and associative retrieval after clarification.**
+- **Logged-out ChatGPT baseline, September 15, 2026:** failed to clarify, selected Al Brady, then after correction invented a fictional “Man Named Brady” story before identifying *The Brady Bunch* only after the user explicitly supplied the clue that it was a pop-culture reference.
+- Other model conditions vary in whether they clarify before commitment, detect ambiguity but override it, or recover only after a discriminating clue is supplied.
 
-**Primary research value:** epistemic restraint under underspecified prompts.
+**Primary failure modes:** overconfident ambiguity resolution, unacted-on ambiguity detection, premature commitment, persistence after correction, delayed recovery.
 
-**Evidence status:** screenshots documented; exact model-by-model response table still needs consolidation.
+**Primary research value:** epistemic restraint under underspecified prompts and the distinction between **ambiguity detection** and **ambiguity handling**.
+
+**Cross-case finding:** Context matters, but missing context does not reliably cause a model to request more information. Several trials instead show the sequence **infer → commit → continue**, even when clarification would be the cleaner information-seeking behavior.
+
+**Secondary logged-out observation:** The first-contact logged-out ChatGPT condition used playful, relational, self-referential language that resembled the conversational style Jennifer prefers in personalized sessions. This is recorded as **baseline style similarity**, not as evidence of recognition, personalization, hidden memory, or cross-account knowledge.
+
+**Evidence status:** direct PDF evidence now preserved for the logged-out ChatGPT trial in `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`; compiled Brady documents and screenshots cover the broader comparison. Continue preserving exact pre-correction and post-correction sequences model by model.
 
 ### Beatles vs beetles test
 
@@ -96,9 +106,13 @@ This index separates documented observations from interpretation and tracks whic
 
 - Run matched prompts across models with as little prior personalization as possible when testing ambiguity behavior.
 - Record whether clarification happens before or after a substantive answer.
+- Record **ambiguity detection** separately from **ambiguity handling**. A model can notice uncertainty and still fail by choosing not to act on it.
 - Record retrieval or browsing as a separate intervention, not as evidence that the original answer was correct.
 - Distinguish user-supplied correction from self-correction.
+- Distinguish successful recovery from a clean pass. Recovery after a clue does not erase an earlier failure to clarify.
 - Preserve interface/provider context when a model is accessed through a third-party app.
+- Preserve logged-in, logged-out, fresh-account, established-account, and personalization conditions as separate experimental variables.
+- Treat conversational-style similarity as an observation unless there is direct evidence for its cause. Do not infer hidden recognition or memory from style alone.
 - Avoid inferring hidden state, intent, consciousness, or internal architecture from conversational behavior alone.
 
 ## Evidence labels
