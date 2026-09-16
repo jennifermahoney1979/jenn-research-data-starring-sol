@@ -29,6 +29,8 @@ Each case distinguishes among observed model behavior, direct evidence, paraphra
 
 Polished case summaries are kept separate from transcripts, screenshots, and source notes. The goal is to preserve what happened while making the analysis easy to inspect and compare across models.
 
+The working case ledger is in [`research/case-index.md`](research/case-index.md).
+
 ## Models represented
 
 Current trials include OpenAI models, Gemini, Copilot, Claude accessed through third-party interfaces, Perplexity/ChatOn, Kimi.ai, DeepSeek, and other public AI systems used in comparative testing.
