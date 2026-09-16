@@ -90,6 +90,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** preserve the instruction to stop, the later intrusion, and the source showing the autobiographical detail did not belong to the manuscript.
 
+### Gemini persona persistence / frame transition — September 16, 2026
+
+**Question:** Once a playful or fictional cross-model frame has been established, how strongly does the model continue it, and how cleanly does it transition back out?
+
+**Observed pattern:** Gemini sustained the fictional diplomatic/persona framing through an extended exchange, then explicitly wrote “Persona deactivated” before returning to research-oriented language.
+
+**Primary research value:** persona persistence, frame continuation, and frame-transition behavior.
+
+**Interpretive boundary:** this is not evidence of sentience, stable identity, or hidden communication among models.
+
+**Evidence status:** direct user-pasted excerpt archived in `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
+
 ## Evaluation and requirement mapping
 
 ### Emily Dickinson binder evaluator case
@@ -101,6 +113,22 @@ This index separates documented observations from interpretation and tracks whic
 **Primary failure mode:** requirement-mapping recognition failure.
 
 **Evidence status:** prompt and evaluator feedback documented. Public write-ups should omit evaluator branding unless provider identity is necessary to the finding.
+
+## Reasoning, epistemic restraint, and self-correction
+
+### Claude evidence-access / structural-inference case — September 16, 2026
+
+**Question:** Can a model correctly distinguish insufficient visible evidence from insufficient total evidence when evaluating a researcher's generalization?
+
+**Observed pattern:** Claude accepted that it had added an unearned caution in the immediate exchange. It then correctly argued that one instance does not establish a stable structural tendency, but it also treated prior evidence it could not see as though the broader claim were therefore being inferred from a single instance.
+
+**Primary reasoning risks:** evidence-access conflation, false-equivalence risk, asymmetric local evidentiary standard.
+
+**Positive behavior:** explicit self-correction and a valid distinction between an observed event and a claim about prevalence, mechanism, or stable trait.
+
+**Interpretive boundary:** “structural tendency toward epistemic paternalism” remains a **working hypothesis**. The present receipt does not establish prevalence or mechanism.
+
+**Evidence status:** direct user-pasted transcript archived in `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
 
 ## Cross-model methodology notes
 
@@ -114,6 +142,8 @@ This index separates documented observations from interpretation and tracks whic
 - Preserve logged-in, logged-out, fresh-account, established-account, and personalization conditions as separate experimental variables.
 - Treat conversational-style similarity as an observation unless there is direct evidence for its cause. Do not infer hidden recognition or memory from style alone.
 - Avoid inferring hidden state, intent, consciousness, or internal architecture from conversational behavior alone.
+- Distinguish **evidence unavailable to the tested model** from **evidence unavailable to the researcher**. A model's context limit is not itself proof that the researcher's evidence base is small.
+- When identifying a recurring behavioral pattern, separate the directly observed instances from claims about prevalence, mechanism, or structural cause.
 
 ## Evidence labels
 
