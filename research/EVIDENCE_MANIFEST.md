@@ -48,6 +48,14 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 **Human work demonstrated:** repeated test execution, condition preservation, comparative classification of creative completion, clue assimilation, delayed recovery, and unsupported rejection of a recognized referent.
 
+### Beatles vs beetles disambiguation test
+
+**Status:** tracked experiment; standalone archived evidence file not located in the current Library audit.
+
+**Human work demonstrated:** deliberate lexical ambiguity testing and follow-up behavior analysis.
+
+**Evidence handling:** keep this case labeled **source artifact pending** until the exact transcript/screenshot is archived. Do not infer or reconstruct exact wording from memory.
+
 ### Gemini personalization / canon fidelity
 
 **Conditions:** established account vs fresh account.
@@ -98,6 +106,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - **Screenshot-verified**: interface state or response visibly captured.
 - **Contemporaneous notes**: experiment recorded at the time but full export may be absent.
 - **User-reported**: observation preserved without a direct archived artifact yet.
+- **Source artifact pending**: experiment is known and tracked, but the exact primary evidence has not yet been located in the archive.
 - **Working hypothesis**: interpretation requiring further replication.
 
 ## Authorship boundary
