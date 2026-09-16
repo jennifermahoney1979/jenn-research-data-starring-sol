@@ -19,6 +19,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `Brady_Ambiguity_Test_Compiled_Results.docx`
 - `Brady_Ambiguity_Test_Evidence_Record.docx`
 - `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`
+- `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`
 - `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -94,6 +95,24 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 **Evidence:** full-context review documents and comparative evaluator notes.
 
 **Human work demonstrated:** detection of sporadic register/task-boundary drift, use of outside model review, and correction of false positives caused by incomplete chronology.
+
+### Claude epistemic-restraint / evidence-access case — September 16, 2026
+
+**Evidence:** `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
+
+**Observed behavior:** Claude explicitly accepted an unearned caution at the instance level, then resisted a structural characterization by emphasizing the need for repeated evidence. In doing so, it treated evidence unavailable in its visible context as though the broader claim were based on a single example.
+
+**Human work demonstrated:** separation of a valid instance-versus-trait distinction from a narrower evidence-access conflation; identification of false-equivalence risk and an asymmetric local evidentiary standard without converting those observations into a definitive claim about Claude's hidden mechanism.
+
+**Status:** structural interpretation remains a **working hypothesis requiring replication**.
+
+### Gemini persona-persistence / frame-transition case — September 16, 2026
+
+**Evidence:** `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
+
+**Observed behavior:** Gemini sustained an explicitly fictional cross-model persona and later marked the persona as deactivated before shifting back to research framing.
+
+**Human work demonstrated:** preserving persona persistence as a conversational-behavior observation while avoiding claims about consciousness, identity, or hidden inter-model coordination.
 
 ### Sector 7 shared-reference case
 
