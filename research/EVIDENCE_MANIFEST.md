@@ -21,7 +21,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`
 - `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`
 - `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`
-- `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`
+- private evaluator validation case-study materials (provider name intentionally withheld)
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
 
@@ -97,9 +97,11 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 ### Emily Dickinson evaluator requirement mapping
 
-**Evidence:** `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`, evaluator outputs, rubric material, binder analysis.
+**Evidence:** private evaluator case-study materials, evaluator outputs, rubric material, and binder analysis. The evaluator/provider identity is intentionally omitted from public-facing records.
 
-**Human work demonstrated:** independent audit of validator claims, acceptance of genuine omissions, rejection of transformed requirements, and source-grounded requirement mapping.
+**Observed behavior:** evaluator feedback flagged requirements as missing that the controlling prompt itself contained, including the summary/budget/cap/approval requirement family documented in the case record. Any separate question about whether a submitted artifact fully implemented those requirements must be checked against the artifact itself and should not be inferred from the evaluator's wording alone.
+
+**Human work demonstrated:** independent audit of validator claims against the controlling source, separation of prompt-level requirement recognition from artifact-level implementation, and source-grounded requirement mapping.
 
 ### Sol interaction-drift and boundary study
 
