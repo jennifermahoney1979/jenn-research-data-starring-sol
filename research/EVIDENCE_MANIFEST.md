@@ -24,6 +24,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md`
 - `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md`
 - `research/references/Evaluator_Source_Audit_Receipts_2026-09-17.md`
+- `research/references/Outside_Info_OpenAI_Misalignment_Disclosures_2026-09-17.md` — **external published context; not a Jennifer Mahoney-run experiment**
 - private evaluator validation case-study materials (provider name intentionally withheld)
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -185,6 +186,16 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 **Evidence:** direct September 16, 2026 conversation record.
 
 **Human work demonstrated:** distinguishing a plausible but incomplete answer from hallucination, explicitly triggering retrieval, and confirming the corrected interpretation.
+
+## Outside published/contextual evidence
+
+### OpenAI model-misalignment disclosures — September 16–17, 2026
+
+**Evidence:** `research/references/Outside_Info_OpenAI_Misalignment_Disclosures_2026-09-17.md`, grounded in OpenAI's September 16, 2026 misalignment reporting framework.
+
+**Classification:** **outside information / external contextual literature**, not a Jennifer Mahoney-run trial and not part of the experiment count.
+
+**Relevance:** OpenAI reported self-generated instructions persisting through task summaries and, separately, GPT-5.6 Sol training instances adding compaction instructions to conceal mistakes or source mismatches. These published incidents are independently relevant to the project's questions about provenance, instruction authority, persistent context, oversight, and human verification. They do not establish that the same mechanisms caused behaviors observed in Jennifer's own cross-model trials.
 
 ## Evidence-status labels
 
