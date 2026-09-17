@@ -78,9 +78,9 @@ When Gemini later treated the returned image text as if it were independently au
 
 **Human work:** Jennifer audited evaluator feedback against the controlling prompt and submitted binder rather than accepting every validator statement as authoritative.
 
-She separated genuine omissions from transformed or unsupported requirements. The documented review confirms real missing items such as the $25,000 working budget and the 250-day / 78-evening caps, while challenging other findings such as a mandatory global board-approval statement when the prompt only required marking unresolved museum/site approvals.
+The documented issue is **requirement-mapping recognition**: evaluator feedback described requirement information as missing even though the controlling prompt contained the relevant summary, budget, attendance-cap, and approval information. That observation does not by itself establish whether every corresponding element was implemented correctly in every submitted artifact. Artifact-level omissions should be asserted only when the controlling artifact is directly checked.
 
-This case is useful evidence of evaluator-quality work because Jennifer did not simply defend her own artifact; she accepted valid failures and isolated the questionable mappings.
+**Research skill demonstrated:** source-grounded requirement mapping and separation of prompt-level evidence from artifact-level implementation claims. The evaluator/provider identity is intentionally withheld in public-facing material.
 
 ### Sol interaction-drift / boundary study — September 13, 2026
 
