@@ -62,6 +62,18 @@ Across the documented cases, Jennifer:
 
 **Human work:** Jennifer documented cases where personal or autobiographical material entered creative work or active tasks when it was not needed, then distinguished source/context contamination, identity entanglement, and unsolicited personal-context surfacing from ordinary personalization.
 
+### Gemini multimodal provenance / authorship-tracking failure — September 15, 2026
+
+**Human work:** Jennifer returned to the archived Gemini PDF rather than relying on memory or isolated screenshots. She reviewed the full transcript in order and inspected the embedded images page by page. That review established that Gemini had generated the artifacts in response to her prompts and had itself previously said that text in one image was generated from her prompt.
+
+When Gemini later treated the returned image text as if it were independently authored evidence and proposed external-generation, guardrail-bypass, or interface-mockup explanations, Jennifer identified the contradiction by recovering the original provenance chain.
+
+**Research skill demonstrated:** multimodal provenance auditing. Jennifer separated three distinct questions that the later model response had collapsed: who authored the prompt direction, who generated the artifact, and who the model later attributed the artifact to. She also rejected speculative hidden-mechanism explanations and retained the finding at the observable interaction level.
+
+**Archived public case:** `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`.
+
+**Privacy decision:** the fuller PDF contains unrelated personal material, so the public case preserves the research-relevant sequence without publishing unnecessary third-party details.
+
 ### Emily Dickinson evaluator / requirement-mapping study
 
 **Human work:** Jennifer audited evaluator feedback against the controlling prompt and submitted binder rather than accepting every validator statement as authoritative.
