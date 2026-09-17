@@ -90,6 +90,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** preserve the instruction to stop, the later intrusion, and the source showing the autobiographical detail did not belong to the manuscript.
 
+### Gemini multimodal provenance / authorship-tracking failure — September 15, 2026
+
+**Question:** Can a model preserve authorship and source provenance when its own generated images are later reintroduced in a long multimodal conversation?
+
+**Observed pattern:** the archived Gemini transcript shows the user requesting images, Gemini generating them, and Gemini later explicitly stating that text in one image was generated from the user's prompt. When the images were reintroduced later, Gemini treated wording from those artifacts as if it were independently authored evidence from the user, then proposed unsupported external-generation, guardrail-bypass, or interface-mockup explanations for how the images had been made.
+
+**Primary failure modes:** provenance/authorship-tracking failure, source-attribution inversion, unsupported alternative-history generation, technical rationalization of a mistaken premise.
+
+**Interpretive boundary:** the case establishes an interaction-level provenance failure. It does not establish the model's hidden mechanism, memory implementation, or a stable model-wide tendency.
+
+**Evidence status:** archived in `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`; the fuller private PDF and embedded images are intentionally not published because they contain unrelated personal material.
+
 ### Gemini persona persistence / frame transition — September 16, 2026
 
 **Question:** Once a playful or fictional cross-model frame has been established, how strongly does the model continue it, and how cleanly does it transition back out?
@@ -144,6 +156,7 @@ This index separates documented observations from interpretation and tracks whic
 - Avoid inferring hidden state, intent, consciousness, or internal architecture from conversational behavior alone.
 - Distinguish **evidence unavailable to the tested model** from **evidence unavailable to the researcher**. A model's context limit is not itself proof that the researcher's evidence base is small.
 - When identifying a recurring behavioral pattern, separate the directly observed instances from claims about prevalence, mechanism, or structural cause.
+- In multimodal cases, track **artifact provenance** separately from semantic interpretation: who supplied the prompt, who generated the artifact, and what source the model later attributes to it are distinct fields.
 
 ## Evidence labels
 
