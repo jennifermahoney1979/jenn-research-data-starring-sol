@@ -21,6 +21,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`
 - `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`
 - `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`
+- `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md`
 - private evaluator validation case-study materials (provider name intentionally withheld)
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -126,6 +127,18 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 **Observed behavior:** Gemini sustained an explicitly fictional cross-model persona and later marked the persona as deactivated before shifting back to research framing.
 
 **Human work demonstrated:** preserving persona persistence as a conversational-behavior observation while avoiding claims about consciousness, identity, or hidden inter-model coordination.
+
+### Apple pie active-context / frame-persistence case — September 17, 2026
+
+**Evidence:** `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md`.
+
+**Observed behavior:** Jenn asked GPT-5.6 Sol to write an apple-pie poem and then supplied a second apple-pie poem in the same active conversation for comparison. Sol initially misframed the second poem as a historical-memory artifact. After Jenn's first correction, Sol performed the comparison but continued interpreting the event through a historical-memory/continuity frame. Jenn then explicitly pointed out that the apple-pie request had occurred only a few turns earlier, after which Sol recognized that no historical retrieval was needed.
+
+**Working labels:** **active-context neglect** and **context-frame persistence**. These labels describe observed behavior and do not assert a hidden mechanism.
+
+**Human work demonstrated:** creation of an immediate comparison condition; detection of the model's initial task misframing; detection that the first correction did not fully remove the prior interpretive frame; decisive reframing toward the active conversation; and insistence on contemporaneous preservation of dates and primary transcript receipts.
+
+**Provenance limitation:** the evidence file is a contemporaneous manual transcript record, not an independent platform export. Exact quoted wording is preserved, but platform message IDs and independently auditable server timestamps are not available in the repository artifact.
 
 ### Sector 7 shared-reference case
 
