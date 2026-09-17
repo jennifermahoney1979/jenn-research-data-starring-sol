@@ -20,6 +20,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `Brady_Ambiguity_Test_Evidence_Record.docx`
 - `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`
 - `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`
+- `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`
 - `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -83,6 +84,16 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 **Evidence:** incident records and preserved conversation artifacts.
 
 **Human work demonstrated:** boundary classification separating personalization from unsolicited context, identity entanglement, and source/context contamination.
+
+### Gemini multimodal provenance / authorship-tracking failure — September 15, 2026
+
+**Evidence:** `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`, plus a private archived PDF export containing the full image-generation sequence and embedded images.
+
+**Observed behavior:** Gemini generated images in response to the user's prompts and later explicitly described one image as generated from the user's prompt. When those artifacts were later reintroduced, Gemini treated wording from them as if it were independently authored by the user and proposed unsupported alternative production histories involving external generation, guardrail bypass, or interface mockup.
+
+**Human work demonstrated:** recovery of original provenance from the archived transcript, page-by-page multimodal review, separation of prompt authorship from artifact generation, rejection of unnecessary speculative production histories, and classification of the observed failure without inferring hidden mechanism.
+
+**Privacy handling:** the fuller PDF contains unrelated personal material and is intentionally not published in the public repository.
 
 ### Emily Dickinson evaluator requirement mapping
 
