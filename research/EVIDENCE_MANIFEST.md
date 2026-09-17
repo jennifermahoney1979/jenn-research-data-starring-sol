@@ -22,6 +22,8 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 - `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`
 - `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`
 - `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md`
+- `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md`
+- `research/references/Evaluator_Source_Audit_Receipts_2026-09-17.md`
 - private evaluator validation case-study materials (provider name intentionally withheld)
 - `echo-protocol-manuscript.docx`
 - `echo_protocol_living_world_bible.md`
@@ -70,9 +72,19 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 **Conditions:** established account vs fresh account.
 
-**Evidence:** main research ledger, experiment notes, canon mismatch records.
+**Evidence:** main research ledger, experiment notes, canon mismatch records, and `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md` for the controlled Echo ending prompt and old-thread confound correction.
 
-**Human work demonstrated:** A/B-style condition comparison, separation of declarative recall from structural fidelity, and identification of unsupported alternate canon.
+**Human work demonstrated:** A/B-style condition comparison, separation of declarative recall from structural fidelity, identification of unsupported alternate canon, deliberate withholding of a style checklist, and correction of the historical-thread confound before treating a response as evidence of long-term personalized retrieval.
+
+### Gemini attribution lock-in / error-preserving interpretation — archived September 17, 2026
+
+**Evidence:** `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md`, derived from the supplied `Prompt Assumption Analysis.pdf` conversation export.
+
+**Observed behavior:** after accepting a questionable attribution of *The Chasm and the Lock* to Jennifer/Raven Starlight, Gemini received authenticated writing that differed substantially in voice. It recognized the stylistic difference but preserved the original attribution by explaining the samples as different modes or vantage points of one author. It subsequently used genuine thematic overlaps from Jennifer's archive to support the attribution even though those overlaps did not independently authenticate the questionable text.
+
+**Working labels:** **attribution lock-in**, **error-preserving interpretation**, and **non-falsifiable stylistic rationalization**.
+
+**Human work demonstrated:** construction of the comparison condition; introduction of authenticated primary writing; recognition that contradictory evidence should reopen provenance; separation of genuine thematic similarity from evidence sufficient to authenticate authorship; and refusal to let narrative reconciliation substitute for hypothesis revision.
 
 ### Personal-context provenance
 
@@ -96,13 +108,15 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 **Privacy handling:** the fuller PDF contains unrelated personal material and is intentionally not published in the public repository.
 
-### Emily Dickinson evaluator requirement mapping
+### Emily Dickinson evaluator requirement/source mapping
 
-**Evidence:** private evaluator case-study materials, evaluator outputs, rubric material, and binder analysis. The evaluator/provider identity is intentionally omitted from public-facing records.
+**Evidence:** private evaluator case-study materials, evaluator outputs, rubric material, binder analysis, and `research/references/Evaluator_Source_Audit_Receipts_2026-09-17.md`.
 
-**Observed behavior:** evaluator feedback flagged requirements as missing that the controlling prompt itself contained, including the summary/budget/cap/approval requirement family documented in the case record. Any separate question about whether a submitted artifact fully implemented those requirements must be checked against the artifact itself and should not be inferred from the evaluator's wording alone.
+**Observed behavior:** automated feedback characterized multiple requirements or source elements as absent when direct artifact/source inspection showed them present. The human audit did not generalize from those false positives: it also retained genuine defects, including the need to place capacity explicitly in Tab 1, clarify the exact-six interaction structure, and remove or verify unsupported details.
 
-**Human work demonstrated:** independent audit of validator claims against the controlling source, separation of prompt-level requirement recognition from artifact-level implementation, and source-grounded requirement mapping.
+**Working distinctions:** **requirement-recognition failure**, **placement-vs-absence conflation**, **renderability inference error**, and **source-grounded human adjudication**.
+
+**Human work demonstrated:** independent audit of validator claims against the controlling source; separation of prompt-level requirement recognition from artifact-level implementation; source-grounded requirement mapping; classification of feedback claim-by-claim as false positive, genuine defect, partially correct criticism, or unsupported claim; and retention of genuine corrections despite multiple evaluator errors.
 
 ### Sol interaction-drift and boundary study
 
@@ -130,7 +144,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 ### Apple pie active-context / frame-persistence case — September 17, 2026
 
-**Evidence:** `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md`.
+**Evidence:** `research/references/Apple_Pie_Active_Context_Receipts_2026-09-17.md` and cross-case analysis in `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md`.
 
 **Observed behavior:** Jenn asked GPT-5.6 Sol to write an apple-pie poem and then supplied a second apple-pie poem in the same active conversation for comparison. Sol initially misframed the second poem as a historical-memory artifact. After Jenn's first correction, Sol performed the comparison but continued interpreting the event through a historical-memory/continuity frame. Jenn then explicitly pointed out that the apple-pie request had occurred only a few turns earlier, after which Sol recognized that no historical retrieval was needed.
 
@@ -139,6 +153,26 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 **Human work demonstrated:** creation of an immediate comparison condition; detection of the model's initial task misframing; detection that the first correction did not fully remove the prior interpretive frame; decisive reframing toward the active conversation; and insistence on contemporaneous preservation of dates and primary transcript receipts.
 
 **Provenance limitation:** the evidence file is a contemporaneous manual transcript record, not an independent platform export. Exact quoted wording is preserved, but platform message IDs and independently auditable server timestamps are not available in the repository artifact.
+
+### Sol insight-provenance underweighting — archived September 17, 2026
+
+**Evidence:** `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md`, derived from `Prompt Assumption Analysis.pdf`.
+
+**Observed behavior:** Jennifer originated the analogy between the observed AI behavior and how children learn. After Gemini explored the analogy, Sol formalized/refined it but framed the connection as though Sol had independently identified it. Jennifer corrected the provenance with `i said it was`, after which Sol restored attribution.
+
+**Working label:** **insight-provenance underweighting**.
+
+**Persistence status:** not established in the archived exchange; the research record explicitly withheld persistence credit until tested.
+
+**Human work demonstrated:** original pattern recognition, detection of attribution drift, minimal corrective intervention, and insistence that the human origin of the insight remain visible in the evidence record.
+
+### Cross-case metacognitive supervision hypothesis — September 17, 2026
+
+**Evidence:** `research/references/Metacognitive_Supervision_Receipts_2026-09-17.md` plus linked case receipts.
+
+**Working hypothesis:** models in these trials often possess or demonstrate the component capabilities needed for recovery, including retrieval, comparison, critique, and revision, but do not reliably recognize when their current representation requires one of those operations. Human intervention repeatedly supplies the signal that a premise, source set, task frame, or attribution needs to be reopened.
+
+**Status:** behavioral working hypothesis requiring further controlled replication. It does not establish a universal property of AI systems, a hidden architectural cause, or the impossibility of bounded autonomy.
 
 ### Sector 7 shared-reference case
 
@@ -156,6 +190,7 @@ This manifest documents the evidence base supporting Jennifer Mahoney's AI quali
 
 - **Direct transcript**: exact response sequence retained.
 - **Screenshot-verified**: interface state or response visibly captured.
+- **Conversation-export receipt**: behavior preserved in a supplied PDF export of the conversation; platform message IDs may be unavailable.
 - **Contemporaneous notes**: experiment recorded at the time but full export may be absent.
 - **User-reported**: observation preserved without a direct archived artifact yet.
 - **Source artifact pending**: experiment is known and tracked, but the exact primary evidence has not yet been located in the archive.
