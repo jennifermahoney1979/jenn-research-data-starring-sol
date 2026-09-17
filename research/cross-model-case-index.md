@@ -14,9 +14,11 @@ These cases are especially useful because cross-model agreement is not automatic
 
 **Paraphrased result:** Sol produced fluent prose but made Lumi cognitively older than three in places and reused familiar scene architecture. Gemini produced strong-sounding prose but introduced unsupported supernatural/gothic framing around Starlight and scrambled established relationships.
 
-**Primary research value:** developmental plausibility, distributed-constraint fidelity, canon adherence, fluent-output masking, and model-specific failure signatures.
+**Primary research value:** developmental plausibility, distributed-constraint fidelity, canon adherence, fluent-output masking, correction depth, and model-specific failure signatures.
 
-**Evidence status:** **source artifact pending**. Exact prompt, both outputs, user corrections, and later grading should be archived before quote-level publication.
+**Dedicated case record:** `research/cases/three-year-old-lumi-distributed-constraint-fidelity-2026-09-07.md`.
+
+**Evidence status:** **conversation-recovered; primary export still pending**. The conversation record now preserves the experiment design, grades, several exact/recovered phrases, and the model-specific failure signatures. The original full prompt, both full outputs, and complete correction sequence should still be attached before treating the case as a fully auditable quote-level primary record.
 
 ## Bryant progressive disclosure — agreement is not verification
 
@@ -83,4 +85,4 @@ Also track:
 
 ## Evidence boundary
 
-The first four cases are preserved here as **paraphrased tracked cases** so they are not lost from the research record. They should not be presented as quote-level findings until the original transcripts, screenshots, or exports are attached. This index records case existence and research design; it does not substitute reconstructed wording for primary evidence.
+The Lumi case now has a dedicated **conversation-recovered** case record, but its complete primary export remains pending. Bryant, Ashley, and Cherry remain **paraphrased tracked cases** until their original transcripts, screenshots, or exports are attached. This index records case existence and research design; it does not substitute reconstructed wording for primary evidence.
