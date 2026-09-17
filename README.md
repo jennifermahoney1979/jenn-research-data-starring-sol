@@ -16,6 +16,7 @@ This repository turns model interactions into portfolio-ready AI quality-assuran
 
 - **Context-boundary cases** — examines when a model uses context that is unnecessary for the current request.
 - **Sticky framing and correction behavior** — studies whether a model can release an incorrect interpretation after correction.
+- **Multimodal provenance and authorship tracking** — examines whether a model preserves the distinction between user-authored input and model-generated artifacts when images, screenshots, and prior outputs are reintroduced later in the conversation.
 - **Cross-model comparison** — compares how different systems handle the same ambiguous or underspecified prompt.
 
 ### Evaluation and requirement mapping
@@ -30,6 +31,8 @@ Each case distinguishes among observed model behavior, direct evidence, paraphra
 Polished case summaries are kept separate from transcripts, screenshots, and source notes. The goal is to preserve what happened while making the analysis easy to inspect and compare across models.
 
 The working case ledger is in [`research/case-index.md`](research/case-index.md).
+
+A current provenance case is archived at [`research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`](research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md).
 
 ## Models represented
 
