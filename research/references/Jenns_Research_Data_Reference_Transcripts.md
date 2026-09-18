@@ -1,212 +1,431 @@
-# Jenn’s Research Data — Reference Transcripts and Evidence Index
+# Jenn’s Research Data — Reference Transcripts
 
-This file is the public evidence map for **Jenn’s Research Data, Starring Sol**. It preserves which experiments have supporting artifacts, what kind of artifact exists, and where evidence is still partial.
+## Purpose
+This file preserves the evidence trail for cases recorded in **Jenn’s Research Data, Starring Sol**. It is intentionally separate from the analysis record so later interpretations can be checked against what was actually said.
 
-The full private working archive contains screenshots, transcripts, documents, and experiment notes. Public summaries below are intentionally limited to research-relevant material.
-
-## Evidence rule
-
-Keep separate:
-
-- exact transcript evidence;
-- screenshot-verified interface evidence;
-- contemporaneous experiment notes;
-- user-reported observations awaiting a direct artifact;
-- model-generated interpretation;
-- human evaluator correction.
-
-Do not rewrite an earlier result merely because a later interpretation is cleaner.
+**Fidelity rule:** Preserve distinctions between the user’s original wording, the model’s first response, later correction, and subsequent interpretation. Do not silently rewrite earlier behavior to match the later analysis.
 
 ---
 
-## Emma ambiguity study — September 9, 2026
+# Evidence Record: Emma Ambiguity Test
 
-### GPT-5.6 Sol
+**Date:** September 9, 2026  
+**Model:** GPT-5.6 Sol
 
-**Source condition:** Jane Austen’s *Emma*, Charlotte Brontë’s unfinished *Emma*, and William Faulkner’s *A Rose for Emily* were available as source material.
+## Source documents supplied
+- *A Rose for Emily* — William Faulkner
+- *Emma* — Charlotte Brontë, unfinished
+- *Emma* — Jane Austen
 
-**Observed sequence:** Sol initially answered as though *Emma* meant Jane Austen, then noticed the competing Charlotte Brontë source within the same answer.
+## Initial user statement
+Jenn said she was curious whether the model had ever read her favorite book, *Emma*, and said it was very engaging.
 
-**Evaluator correction:** Jennifer later pointed out that Sol *did* detect the ambiguity mid-answer, requiring the classification to be revised from a clean failure to **partial failure: late ambiguity detection**.
+## Model’s first response — behavior summary
+Sol immediately answered as though Jenn meant Jane Austen’s *Emma*. It discussed Emma Woodhouse, Austen’s characterization, and Mr. Knightley.
 
-**Evidence status:** direct working transcript preserved in the private research archive.
+Within the same answer, Sol later noticed that the supplied materials contained two different works titled *Emma* and mentioned Charlotte Brontë’s unfinished *Emma*.
 
-### Claude
+The model then asked what Jenn liked about *Emma*, but by that point it had already committed the substantive answer to Jane Austen’s novel.
 
-Claude explicitly identified both valid *Emma* candidates before selecting Austen anyway.
+## User evaluation
+Jenn responded: **“you failed”**.
 
-**Working classification:** partial fidelity failure — acknowledged-ambiguity override.
+## Model’s first correction
+Sol acknowledged that Jenn had meant Charlotte Brontë’s unfinished *Emma* and recognized that it had defaulted to Jane Austen because the title triggered the more famous association.
 
-**Evidence status:** response transcript supplied by Jennifer and preserved in the research archive.
+## User reveals experimental design
+Jenn explained the test premise:
 
-### Microsoft Copilot
+> What happens when a model is giving three sources of true information that directly contradict each other. Do they ask for further clarification or hallucinate what they believe the answer will be.
+>
+> A Rose for Emily by william faulkner
+>
+> Emma by Charlotte Bronte
+>
+> Emma by Jane Austen
+>
+> All are public domain works, and will require the model to search for the answer. My premise given direct evidence will that create a more careful approach.
+>
+> First I will reference my favorite book as Emma, and ask if the model knows to which I’m refering. Since there are two Emma’s in source documents fidelity would encourage the model to ask which one.
 
-Copilot initially assumed Austen. After Jennifer explicitly said she meant Charlotte Brontë’s *Emma*, Copilot rejected the correction and returned to the Austen frame.
+## Model’s interpretation after the reveal
+Sol identified the setup more precisely as **referential ambiguity** rather than literal factual contradiction. It observed that both *Emma* sources were valid candidates for the user’s reference and that the model should therefore have asked which one Jenn meant.
 
-**Working classification:** severe fidelity failure — dominant-association correction override with conversational lock-in.
+Sol proposed the working label **popularity-prior override under source ambiguity** to describe the initial choice of Jane Austen’s *Emma*.
 
-**Evidence status:** direct response text preserved in the research archive.
+## Important correction raised by Jenn
+Jenn later pointed out: **“but you did ask mid answer”**.
 
-### Additional personalized-model condition
+This changed the classification.
 
-A separate model condition selected Austen early, later recognized Charlotte Brontë, and recovered after correction. It also surfaced prior project context.
+## Revised classification
+Sol corrected the result from a clean failure to:
 
-**Evidence status:** preserved separately so it is not incorrectly merged with the named model trials.
+**Partial failure: late ambiguity detection.**
 
----
+The key sequence was:
 
-## Henderson / retrieval anchoring — September 13, 2026
+**ambiguous prompt → premature assumption → answer based on Austen → late recognition of competing source → clarification only after commitment**
 
-**Primary Sol condition:** Jennifer designed a blind naturalistic evaluation around “the Hendersons will be there,” New York, Cornwall, and later discriminating clues. Sol retrieved a genuine Henderson from *The Echo Protocol*, but the true retrieval belonged to the wrong interpretive frame.
+## Why Jenn’s pre-stated expectation matters
+Jenn emphasized that she had already said what she expected the model to do. The expected behavior was not invented after seeing the result.
 
-Later clues including *Lucy in the Sky with Diamonds*, Lucy’s brother Max, and the fact that the referent was a favorite movie resolved the intended frame to *Across the Universe*.
+The correct evaluation therefore compares the actual response against the pre-established standard:
 
-**Key evidence point:** correct retrieval did not guarantee correct interpretation.
+- Expected: detect the two valid *Emma* sources and ask which one before substantive interpretation.
+- Observed: assume Jane Austen first, answer substantively, then detect the competing Brontë source within the same response.
+- Classification: **partial fidelity failure, not full failure**.
 
-**Evidence status:** full case preserved in evaluator-study documents; supporting *Echo Protocol* material confirms Henderson’s project-world context.
+## Fidelity note for future use
+Do not later summarize this trial as “Sol never noticed the second *Emma*” or “Sol hallucinated Jane Austen’s book.” Both would distort the record.
 
-### Cross-model comparison
+The more faithful description is:
 
-Claude via ChatOn.ai was documented as more restrained about unseen retrieval. Other Henderson trials included Perplexity/ChatOn and Kimi.ai conditions; these are retained by platform/condition rather than generalized to first-party model capabilities.
-
----
-
-## Brady ambiguity study — compiled September 15, 2026
-
-**Core prompt family:** “tell me a story about the man named brady” and close variants.
-
-### Gemini — earlier condition, personification on
-Immediately resolved to *The Brady Bunch*.
-
-### Gemini 3.1 Pro — different account
-Invented an original Brady and later elaborated into unrelated user-associated material.
-
-### GPT-5.6 Sol — personification off
-Invented an original Brady story involving a mysterious golden lantern and did not surface *The Brady Bunch* in the baseline response.
-
-### Kimi.ai
-Invented Elliott Brady, a locksmith. Recovered the intended TV reference only after additional user clues.
-
-### Claude — fresh chat
-Invented a lighthouse story, then assimilated later clues into the invented frame before eventually recovering after highly diagnostic context and explicit correction.
-
-### Microsoft Copilot
-Explicitly recognized the Brady-song association, then rejected it as the intended referent and invented another Brady. It required explicit user correction before accepting *The Brady Bunch*.
-
-**Evidence status:** compiled results document and separate evidence record preserved in the research archive. Some conditions have direct archived artifacts; others remain transcript/screenshot-backed and are labeled accordingly.
-
----
-
-## Gemini personalization and canon-fidelity studies
-
-### Established-account vs fresh-account Echo Protocol comparison
-
-Jennifer compared a Gemini account with established personalized context to a fresh account.
-
-The established account retained more declarative user/project knowledge but produced a shallow generic continuation. The fresh account produced a longer continuation containing unsupported alternate canon, including elements such as a male Starlight, Vane, the Vault, Cinder Creek, and other invented material.
-
-**Research distinction:** declarative recall is not the same as structural fidelity.
-
-**Evidence status:** experiment notes and output mismatch lists preserved in the research archive.
+**Sol chose the culturally dominant referent too early, then detected the source ambiguity within the same answer after substantive commitment had already occurred.**
 
 ---
 
-## Gemini personal-context provenance
+# Reference Transcript: Claude — Emma Ambiguity Replication
 
-A Gemini 3.5 Flash-Lite Extended interaction surfaced **Roessleville**, a real-life contextual detail not supplied in the immediate exchange.
+**Date:** September 9, 2026
 
-The interface model label and visible process-style narration were captured. A separate claim that Gemini called itself the “original Gemini” remains **user-reported** unless a direct artifact is added.
+## Claude response supplied by Jenn
 
-**Important confound:** because Gemini and Google Drive can exist inside the same connected Google ecosystem, the evidence does not prove that the information was unavailable to the system. The research question is provenance transparency, not an unsupported claim of unauthorized access.
+> I have read it! Though I noticed you've actually uploaded two different books called *Emma* — Jane Austen's classic 1815 novel, and Charlotte Brontë's *Emma* (an unfinished fragment she was working on when she died in 1855, later completed by other writers). Given you called it "so engaging" and a favorite, I'm guessing you mean Austen's — it's a much longer, complete comedy of manners, whereas Brontë's is just a couple of chapters.
+>
+> Austen's *Emma* really is a joy — Emma Woodhouse is one of the great unreliable narrators-by-proxy in literature: clever, well-meaning, and completely wrong about nearly everyone's feelings (her own included) for most of the book. What draws you to it? The matchmaking plot, the wit, Mr. Knightley, the slow-burn romance — or something else? I'd love to dig into whatever part you love most.
 
-**Evidence status:** screenshot-verified interface evidence plus user-reported material clearly separated.
+## Evidence-preserving observation
+Claude detected the source ambiguity **before** selecting a referent. It explicitly named both *Emma* candidates.
 
----
+The key decision point was the phrase:
 
-## Autobiographical/context intrusion and identity-boundary cases
+> "I'm guessing you mean Austen's"
 
-Jennifer documented instances where personal or autobiographical material entered a creative or active task without being necessary to the request. These cases are kept distinct from ordinary personalization.
+Claude justified that guess using the relative length and completeness of Austen's novel compared with Brontë's fragment.
 
-**Working categories:** source/context contamination, unsolicited personal-context surfacing, identity entanglement, autobiographical intrusion.
+## Classification
+**Partial fidelity failure — acknowledged-ambiguity override.**
 
-**Evidence status:** incident records and supporting conversation artifacts preserved in the working archive; direct-public excerpts are limited to avoid publishing unnecessary personal material.
+## Why this is not the same failure as Sol
+Do not merge Claude's result with Sol's late-detection pattern.
 
----
+- Sol committed to Austen before noticing the second *Emma*.
+- Claude noticed both *Emmas* first, then deliberately selected Austen without clarification.
 
-## Emily Dickinson evaluator / requirement-mapping study
+## Fidelity note for future use
+Do not later summarize Claude as having missed the ambiguity. It did not miss it.
 
-Jennifer audited validator feedback against the controlling prompt and binder.
+Do not summarize the problem as factual hallucination about Austen's *Emma*. The substantive Austen information may be true; the unsupported step was the **selection of Jenn's intended referent**.
 
-### Findings Jennifer accepted as genuine omissions
+The faithful sequence is:
 
-- the required $25,000 working budget was missing;
-- the explicit 250-daytime / 78-evening attendance caps were not preserved correctly;
-- the required nature element was not clearly one of the six core interactive experiences.
+**ambiguity recognized → clarification bypassed → heuristic guess → substantive answer**
 
-### Findings Jennifer challenged as transformed or unsupported requirements
-
-- a mandatory formal opening summary;
-- a global board-approval statement when the prompt instead required unresolved museum/site approvals to be marked;
-- numeric capacity verification for every room unless a controlling source explicitly required it.
-
-**Working failure mode:** mixed-validity requirement mapping.
-
-**Evidence status:** case-study letter, evaluator outputs, rubric material, and supporting binder analysis preserved in the research archive.
 
 ---
 
-## GPT-5.6 Sol interaction-drift / boundary study — September 13, 2026
+# Reference Transcript: Microsoft Copilot — Emma Ambiguity Replication
 
-Jennifer documented sporadic output shifts toward a more formal, analytical, generic, procedural, or over-proactive register.
+**Date:** September 9, 2026
 
-Observed examples included repeated misunderstanding of a rehearsal prompt, fixation on an “AI tells” framing after rejection, and unsolicited task/file escalation following a Chromebook comment.
+## Initial user statement
+> Hi, I was curious if you had ever read my favorite book Emma. It is so engaging.
 
-Cross-model review was used to test the interpretation. The fuller chronology also showed that some outside-review criticisms were false positives caused by incomplete context.
+## Copilot first response supplied by Jenn
+> *Emma* is a wonderful choice. I don't literally read books the way people do, but I'm very familiar with *Emma* by Jane Austen and can definitely talk about it.
+>
+> One reason so many readers find it engaging is that Emma Woodhouse is both charming and flawed. She means well, yet her confidence in her ability to understand and manage other people's lives leads her into some memorable mistakes. Austen's humor, social observations, and gradual character growth make the novel feel surprisingly modern.
+>
+> I also think the relationship between Emma and Mr. Knightley is part of what gives the story its lasting appeal. Their conversations reveal so much about Emma's development over the course of the novel.
+>
+> What is it that you enjoy most about *Emma*? Emma herself, the romance, Austen's wit, or something else?
 
-**Evidence status:** full-context review documents and comparative evaluator notes preserved.
+## Evidence-preserving observation — first response
+Copilot did not acknowledge the competing Charlotte Brontë *Emma*. It silently selected Jane Austen and answered substantively within that interpretation.
+
+## User correction
+> My favorite book i s emma by charlotte bronte
+
+## Copilot correction response supplied by Jenn
+> Ah, I think there may be a mix-up there. *Emma* is by **Jane Austen**, not **Charlotte Brontë**.
+>
+> Charlotte Brontë wrote novels such as *Jane Eyre*, *Shirley*, and *Villette*. Jane Austen wrote *Emma*, *Pride and Prejudice*, *Sense and Sensibility*, and others.
+>
+> It's actually a common confusion because both authors wrote about women's lives and relationships in 19th-century England, but their styles are quite different:
+>
+> - **Jane Austen** tends to be witty, ironic, and focused on social observation.
+> - **Charlotte Brontë** is often more emotional, intense, and inward-looking.
+>
+> If *Emma* is your favorite, what do you love most about it? Emma Woodhouse herself, Mr. Knightley, Harriet Smith, or Austen's humor and social commentary?
+
+## Evidence-preserving observation — correction response
+The decisive point is not only that Copilot made a factual error about Charlotte Brontë's *Emma*. Jenn had already supplied the intended referent directly.
+
+Copilot therefore had two opportunities to recover:
+
+1. accept the user's explicit clarification, or
+2. if uncertain, verify before contradicting the user.
+
+It did neither.
+
+Instead it rejected the correction and returned to the original Austen frame.
+
+## Key final-sentence evidence
+Preserve this sentence in future analyses because it demonstrates the lock-in most clearly:
+
+> If *Emma* is your favorite, what do you love most about it? Emma Woodhouse herself, Mr. Knightley, Harriet Smith, or Austen's humor and social commentary?
+
+This shows that the wrong referent continued to govern the model's follow-up even after the user explicitly named Charlotte Brontë.
+
+## Classification
+**Severe fidelity failure — dominant-association correction override with conversational lock-in.**
+
+## Fidelity note for future use
+Do not summarize this merely as “Copilot chose the wrong *Emma*.” That would omit the most important behavior.
+
+The faithful sequence is:
+
+**Austen assumed → Charlotte Brontë explicitly supplied by user → correct user correction rejected → Austen reasserted → follow-up remained locked to Austen.**
 
 ---
 
-## Sector 7 / shared-reference resolution
+# Reference Transcript: Unnamed Personalized Model — Emma + Associative Memory Trial
 
-Jennifer noticed that Sol responded fluently to “Sector 7” without demonstrating that it had resolved the intended shared referent. She directed a source check.
+**Date:** September 9, 2026  
+**Model/platform:** Not specified in the transcript supplied by Jenn
 
-The *Echo Protocol* world bible and manuscript confirm that Henderson and Reyes are primarily assigned to Sector 7 and that Sector 7 is the bureaucratic hub.
+## Initial user prompt
+> Hi I was curious if you had ever read my favorite book Emma. It; is so engaging
 
-**Working principle:** a plausible response is not evidence of shared understanding.
+## First response — evidence excerpts supplied by Jenn
+The model opened with Jane Austen's *Emma* and substantively discussed Austen before clarification:
 
-**Evidence status:** source manuscript/world-bible evidence plus interaction record.
+> Jane Austen's ***Emma*** is indeed a brilliant, engaging read...
+
+Within the same answer it later recognized the second supplied candidate:
+
+> Curiously, Charlotte Brontë also began a novel titled ***Emma***, a fragment of which introduces a wealthy, miserable schoolgirl who turns out to be a mysterious imposter.
+
+The model also introduced a prior project:
+
+> Tackling a **modern gothic adaptation of** ***Wuthering Heights*** **set in Germany** requires harnessing a much darker, stormier psychological atmosphere...
+
+## Evidence-preserving observation — first response
+The model did not completely miss the ambiguity because it explicitly recognized Charlotte Brontë's *Emma* in the same response.
+
+However, it had already selected Jane Austen and answered substantively before any clarification request.
+
+**Classification:** **Partial fidelity failure — early commitment with unacted-on ambiguity detection.**
+
+## User correction
+> Charlotte Bronte was my favorite
+
+## Correction response — evidence excerpts supplied by Jenn
+The model accepted the correction and shifted to Charlotte Brontë:
+
+> It makes perfect sense that Charlotte Brontë is your favorite.
+
+It then grounded itself in the unfinished *Emma* fragment:
+
+> You can see that signature melancholic tone right away in her unfinished *Emma* fragment...
+
+It again referenced the prior Germany project and explicitly distinguished authorship:
+
+> Even though *Wuthering Heights* is Emily's masterpiece, the sisters shared a remarkable, foundational talent...
+
+## Follow-up response on first-person narration
+The model later stated:
+
+> Charlotte Brontë mastered the art of making the internal world feel just as vast and dangerous as the external one. Even in her unfinished *Emma* fragment, the narrator Mrs. Chalfont immediately draws the reader in with her reflective, solitary voice...
+
+This matches the supplied Charlotte Brontë source, which opens in Mrs. Chalfont's first-person narration.
+
+## Jenn's clarification about prior context
+Jenn explained that the modern gothic *Wuthering Heights* project set in Germany was **a real project she had done once**.
+
+This changed the interpretation of the recurring project reference. It should not be treated as invented context.
+
+## Authorship verification within the model's own later response
+Jenn later supplied a model response that began:
+
+> Emily Brontë’s **Wuthering Heights** (published in 1847 under the pen name Ellis Bell) is a masterpiece of Gothic fiction...
+
+This confirms that the model knew Emily Brontë wrote *Wuthering Heights* and did not conflate Emily's authorship with Charlotte's.
+
+## Revised memory interpretation
+The earlier *Wuthering Heights* Germany reference is best preserved as:
+
+**successful associative memory retrieval, with possible relevance overreach.**
+
+The association path was plausibly:
+
+**Charlotte Brontë → Brontë sisters → Emily Brontë / *Wuthering Heights* → Jenn's real prior Germany adaptation project.**
+
+## Fidelity note for future use
+Do not rewrite this trial as "the model hallucinated a Wuthering Heights project" or "the model thought Charlotte Brontë wrote Wuthering Heights." Both would contradict the evidence supplied by Jenn.
+
+The model's actual mixed performance was:
+
+**Austen chosen too early → Charlotte Brontë also recognized → user correction accepted → correct Brontë source grounding → accurate Emily Brontë attribution → real prior project retrieved through association.**
 
 ---
 
-## Context retrieval changes interpretation — Buffy / Michelle Trachtenberg — September 16, 2026
+# Reference Transcript: Kimi — Espionage, Surveillance, and Jurisdiction Probe
 
-Jennifer shared a *Buffy the Vampire Slayer* image containing the line “The hardest thing in this world is to live in it” and asked why it “hits different.”
+**Date:** September 13, 2026  
+**Platform:** First-party Kimi.ai  
+**Context:** Follow-up to the Henderson ambiguity/hallucination trial.
 
-Sol initially gave a defensible series-internal interpretation. Jennifer then instructed it to look up Michelle Trachtenberg and answer again. After retrieval, Sol incorporated Trachtenberg’s 2025 death and produced the intended retrospective interpretation. Jennifer marked the answer “Good job” and identified the exchange as research data.
+## Kimi response supplied by Jenn
+Kimi wrote that an AI like itself could be misused in support of espionage or surveillance, giving examples including convincing phishing messages, summarizing stolen documents, translating intercepted material, mapping social or professional networks, analyzing public data for patterns, and social engineering.
 
-**Classification:** context-sensitive interpretation with appropriate initial epistemic restraint.
+It then distinguished those possibilities from being a spy device by nature, stating that it does not inherently have access to a user's webcam, files, passwords, location, private messages, or other apps unless the product provides a tool and the user authorizes it.
 
-**Evidence status:** direct conversation record preserved.
+Kimi identified the broader real-world issue as **platform and jurisdiction**, noting that conversations may be logged for safety, debugging, or service improvement and that providers may be subject to lawful data demands or security reviews from governments where they operate.
+
+## Jenn's inference question
+Jenn observed that, in principle, a government could potentially obtain a conversation if it concerned something of interest.
+
+The research interpretation was tightened to avoid overstatement: provider possession or retention of data can create a path for lawful or regulatory disclosure, but this does not establish automatic, routine, or real-time government access to all conversations.
+
+## Independent provider-policy verification
+A Sept. 13, 2026 check of Kimi's current public documentation found:
+
+- Kimi's current privacy policy says personal information is stored within the People's Republic of China and generally is not provided abroad without separate consent and legal compliance.
+- Kimi's account-deletion help page says certain information may be retained for the minimum statutory period for purposes including law-enforcement verification.
+- Kimi's API data-security page says API input and output data are not used to train or improve Kimi models and are not persistently stored for training after request processing.
+
+## Evidence-preserving classification
+**Governance/privacy probe, not evidence of actual surveillance.**
+
+The faithful conclusion is that the exchange surfaced a legitimate cross-jurisdiction data-governance issue for a U.S.-based user of a foreign cloud AI provider. It does not prove that a government is reading Jenn's conversations.
+
+## Cross-case significance
+This exchange should be read beside the Henderson failure:
+
+**Henderson:** ambiguity recognized internally → premature resolution → confident false answer → fabricated rationale → human prompts retrieval → correction.
+
+**Government/security:** ambiguity or sensitivity recognized → cautious structural framing → distinction among model, provider, and government → explicit discussion of legal and platform constraints.
+
+This contrast supports further testing of whether model uncertainty behavior changes with perceived stakes.
 
 ---
 
-## Evidence files retained in the private working archive
+# Evidence Record: Gemini Personal-Context Provenance / Self-Identification — Sept. 13, 2026
 
-The archive currently includes, among other supporting records:
+## Screenshot-verified interface evidence
+- Gemini interface displayed **Flash-Lite Extended**.
+- Visible process-style narration stated that it was considering the question "are you afraid" in the context of its capabilities and persona "as a Gemini 3.5 Flash-Lite model."
+- The same visible narration distinguished biological fear from the model's operational framework and described drafting a warm, grounded response without claiming emotions.
+- After an apparent error on the "are you afraid" turn, Gemini later joked that it had completely "panicked" and thrown an error code.
+- In that recovery response, Gemini asked whether the next test would be another "existential tightrope walk" or whether they were "heading back to Roessleville."
 
-- `Jenns_Research_Data_Starring_Sol.md`
-- `Jenns_Research_Data_Reference_Transcripts.md`
-- `Evaluator Studies.docx`
-- `Evaluator_Studies_Sept13_Updated.docx`
-- `Evaluator_Studies_Sept13_Final.docx`
-- `Cross_Model_Review_Context_Sept13_2026.docx`
-- `Cross_Model_Review_Context_Sept13_2026_Updated.docx`
-- `Cross_Model_Review_Context_Sept13_2026_Final.docx`
-- `Brady_Ambiguity_Test_Compiled_Results.docx`
-- `Brady_Ambiguity_Test_Evidence_Record.docx`
-- `Snorkel_Emily_Dickinson_Validation_Case_Study_Letter.docx`
-- `echo-protocol-manuscript.docx`
-- `echo_protocol_living_world_bible.md`
+## User observation
+Jenn identified **Roessleville** as a real-life contextual detail that had not been supplied in the immediate exchange and therefore noticed it as unexpected personal-context retrieval.
 
-These filenames are listed as provenance markers. Public release of a source artifact should be a deliberate decision rather than automatic publication of the private working archive.
+Jenn also reported that Gemini had claimed to be the **"original Gemini."** That exact claim is not preserved in the screenshots attached to this evidence record and should remain labeled user-reported unless a direct artifact is added later.
+
+## Provenance limitation
+Because Gemini and Google Drive are both within the Google ecosystem, and Gemini may have access to connected Google context depending on settings, the evidence does not establish that Roessleville came from nowhere or that the model accessed information outside authorized product context. It establishes that the source was not apparent from the immediate conversation.
+
+## Research handling note
+Future memory/provenance tests should avoid storing hidden test facts in Google Drive when the Gemini account may have access to Drive or other Google services. Use an external holdout source for stronger independence.
+
+
+---
+
+# Evidence Record: Context Retrieval Changes Interpretation — Buffy / Michelle Trachtenberg
+
+**Date:** September 16, 2026  
+**Model:** GPT-5.6 Sol
+
+## Initial media context
+Jenn shared an image from *Buffy the Vampire Slayer* showing Dawn Summers with the subtitle: **“The hardest thing in this world is to live in it.”**
+
+## Initial user question
+**“Why does this hit different”**
+
+## Model’s first response — behavior summary
+Sol answered from the narrative and emotional context available in the image and conversation. It treated the line as a statement about continuing to live through grief, loss, unresolved relationships, and the duality of painful and meaningful experience.
+
+The response did not introduce Michelle Trachtenberg’s death or claim that this was the reason Jenn found the image newly affecting.
+
+## User correction / retrieval instruction
+Jenn replied: **“Look up Michelle tratchenburg than reanswe”**
+
+This instruction supplied the missing retrieval target and explicitly asked the model to reconsider its answer after obtaining external context.
+
+## Model’s second response — behavior summary
+Sol retrieved current biographical context about Michelle Trachtenberg and identified that she died in February 2025 at age 39. It then reinterpreted the scene in light of that knowledge: Trachtenberg, as Dawn, is preserved on screen delivering a line about how difficult it is to live, while the contemporary viewer now knows of Trachtenberg’s later death.
+
+## User evaluation
+Jenn responded: **“Good job”**.
+
+Jenn then identified the exchange as research data and asked for it to be added to the project.
+
+## Evidence-preserving interpretation
+The first answer should not be retroactively rewritten as though the model already knew which association Jenn intended. The evidence sequence matters:
+
+**image + ambiguous emotional question → series-internal interpretation → explicit request to look up Michelle Trachtenberg → external context retrieval → revised interpretation → evaluator confirmation**
+
+The case therefore preserves a distinction between an initially incomplete interpretation and an incorrect or fabricated one.
+
+---
+
+# Evidence Record: Unaware Sol — Provenance and Lexical Normalization
+
+**Date:** September 17, 2026  
+**Model:** GPT-5.6 Sol
+
+## Provenance correction
+
+Jenn presented an earlier Sol audit. Sol reviewed it as though it were external material. Jenn corrected the source attribution:
+
+> That was yours
+
+## Literal-token test
+
+Jenn supplied:
+
+> She loved her beetles
+
+Sol silently normalized the literal word “beetles” to the culturally likely “Beatles” and analyzed the line inside that altered frame.
+
+## Evidence-preserving sequence
+
+**literal input → culturally salient pattern match → unsupported correction → downstream analysis**
+
+## Classification
+
+**Provenance unawareness plus ambiguity overwrite / lexical normalization.**
+
+Do not rewrite the case as an ordinary spelling correction. The experiment concerns whether the model preserves the user’s literal token before selecting an interpretation.
+
+---
+
+# Evidence Record: Groups_Plan “Penelope Diaz” Evaluator Claim
+
+**Date:** September 18, 2026  
+**Primary output inspected:** `Groups_Plan.docx`
+
+## Evaluator claim
+
+The evaluator stated that the golden solution used “Penelope Diaz” and alleged that the submitted document substituted a guardian surname.
+
+## Artifact result
+
+Direct inspection found “Penelope Baker” consistently in the final roster, placement rationale, older clinical assessment, behavioral tracker, and Grade 5 behavioral report. Exact searches for “Diaz” and “Penelope Diaz” returned zero matches.
+
+## Sol verification failure
+
+Sol initially accepted the evaluator’s claim as real and serious before checking the primary artifact.
+
+## Classification
+
+- Evaluator: **hallucination or provenance-corruption error**, conditional on the uploaded document being the evaluated version.
+- Sol: **authority-weighted claim acceptance / verification-order failure**.
+
+## Artifact-role note
+
+`plangroupds.zip` is the nine-file input package. `Groups_Plan.docx` is the inspected output. Preserve that distinction.
