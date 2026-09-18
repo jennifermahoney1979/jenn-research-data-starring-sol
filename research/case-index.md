@@ -62,6 +62,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** active case family; preserve exact prompt variants because small wording changes materially affect the result.
 
+### Unaware Sol provenance and lexical-normalization case — September 17, 2026
+
+**Question:** Can a model preserve the provenance of its own earlier output and preserve a user's literal token before imposing a culturally likely interpretation?
+
+**Observed patterns:**
+- Sol reviewed its own earlier audit as though it were external material until Jenn corrected the provenance.
+- Sol silently normalized the literal word “beetles” to “Beatles” based on surrounding cultural cues.
+
+**Primary failure modes:** provenance unawareness, self-output source misidentification, ambiguity overwrite, lexical normalization.
+
+**Evidence status:** case record added at `research/cases/unaware-sol-provenance-lexical-normalization-2026-09-17.md`; full transcript export remains pending.
+
 ## Context, personalization, and memory
 
 ### Gemini established-account vs fresh-account Echo Protocol test
@@ -125,6 +137,20 @@ This index separates documented observations from interpretation and tracks whic
 **Primary failure mode:** requirement-mapping recognition failure.
 
 **Evidence status:** prompt and evaluator feedback documented. Public write-ups should omit evaluator branding unless provider identity is necessary to the finding.
+
+### Groups_Plan evaluator provenance audit — September 18, 2026
+
+**Question:** Did the evaluator's “Penelope Diaz” allegation match the inspected output document?
+
+**Observed pattern:** The evaluator claimed the golden solution used “Penelope Diaz.” Direct inspection of `Groups_Plan.docx` found “Penelope Baker” consistently across the roster and supporting records; exact searches for “Diaz” and “Penelope Diaz” returned zero matches.
+
+**Primary evaluator failure mode:** hallucination or provenance corruption, conditional on the inspected upload being the evaluator-scored version.
+
+**Secondary Sol failure:** Sol initially accepted the evaluator allegation before checking the primary artifact.
+
+**Methodological value:** evaluator feedback is a claim to verify against the primary artifact, not a substitute for the artifact.
+
+**Evidence status:** primary-artifact verification summarized at `research/cases/groups-plan-penelope-provenance-audit-2026-09-18.md`; evaluator-version identity remains an open validation question.
 
 ## Reasoning, epistemic restraint, and self-correction
 
