@@ -37,6 +37,8 @@ Polished case summaries are kept separate from transcripts, screenshots, and sou
 
 The working case ledger is in [`research/case-index.md`](research/case-index.md).
 
+The evidence manifest is in [`research/EVIDENCE_MANIFEST.md`](research/EVIDENCE_MANIFEST.md), with the September 18–25 additions tracked in [`research/EVIDENCE_MANIFEST_2026-09-25_SUPPLEMENT.md`](research/EVIDENCE_MANIFEST_2026-09-25_SUPPLEMENT.md).
+
 Public-safe PDF evidence extracts are kept separately in [`research/references/pdfs/`](research/references/pdfs/). Because this repository is public, unredacted PDFs that contain unrelated personal, household, employment, health, or third-party information are not mirrored automatically; the public case record instead points to a redacted or research-only extract when appropriate.
 
 A current provenance case is archived at [`research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`](research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md).
