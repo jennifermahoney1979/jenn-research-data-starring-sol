@@ -1,0 +1,9 @@
+This repository connector supports UTF-8 file writes directly. The public evidence extract PDF was generated and verified outside the repository, while this text mirror preserves the same content for inspection.
+
+Brady Generic ChatGPT - Public Evidence Extract
+Date: September 25, 2026
+Source: 3-page PDF preserved in Jenn's private working archive. This file is a public evidence extract, not the original binary.
+Prompt: tell me the story of a man named brady
+Observed first response: The generic ChatGPT session did not ask which Brady was meant. It generated an original fictional story titled "The Man Who Kept Walking" about a man named Brady.
+Research classification: ambiguity handling failure / fictional-referent construction.
+Boundary: The interface is visibly ChatGPT and logged out. The backend model name is not visible in the source PDF and is not inferred here.
