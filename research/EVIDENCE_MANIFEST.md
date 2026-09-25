@@ -2,6 +2,8 @@
 
 This manifest documents the evidence base supporting Jennifer Mahoney's AI quality-assurance research. It is designed to show both the experiment record and the human evaluation work behind it.
 
+> **Current supplement:** Cases and evidence added after the September 18 cutoff are tracked in [`EVIDENCE_MANIFEST_2026-09-25_SUPPLEMENT.md`](EVIDENCE_MANIFEST_2026-09-25_SUPPLEMENT.md), including the separate public-safe PDF evidence folder at `research/references/pdfs/`.
+
 ## Human contributor
 
 **Jennifer Mahoney** designed the tests, selected conditions and source material, ran trials manually, preserved outputs, compared model behavior, corrected classifications, separated observation from inference, and maintained the case archive.
