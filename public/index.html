@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A private evidence-first explorer for Jenn's AI reliability research." />
+  <meta name="description" content="An evidence-first explorer for Jenn's AI reliability research." />
   <meta name="theme-color" content="#0a101d" />
   <title>Jenn’s Research Data, Starring Sol</title>
   <link rel="stylesheet" href="styles.css" />
@@ -25,9 +25,9 @@
       <button class="nav-item" data-view="compare">Compare</button>
       <button class="nav-item" data-view="taxonomy">Taxonomy</button>
     </nav>
-    <div class="privacy-pill" title="Only you can access this deployed research workspace">
+    <div class="privacy-pill" title="Evidence summaries are separated from private working artifacts">
       <span class="privacy-dot"></span>
-      Private research workspace
+      Evidence-first research workspace
     </div>
   </header>
 
@@ -102,7 +102,7 @@
           <p class="eyebrow">FAILURE TAXONOMY</p>
           <h2 id="taxonomy-title">A vocabulary for what went wrong.</h2>
         </div>
-        <p>Jenn’s working taxonomy separates recall problems, source contamination, invented canon, and three kinds of fidelity. Select a term to jump to matching cases.</p>
+        <p>Jenn’s working taxonomy separates ambiguity, provenance, recall, source contamination, invented canon, and multiple kinds of fidelity. Select a term to jump to matching cases.</p>
       </div>
       <div id="taxonomyGrid" class="taxonomy-grid"></div>
     </section>
@@ -126,6 +126,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="data.js"></script>
+  <script src="data-additions.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
