@@ -42,9 +42,10 @@ This index separates documented observations from interpretation and tracks whic
 - **DeepSeek:** asked for clarification in the documented comparison.
 - **Gemini:** partial failure — early commitment despite detected ambiguity; **successful correction recovery and associative retrieval after clarification.**
 - **Logged-out ChatGPT baseline, September 15, 2026:** failed to clarify, selected Al Brady, then after correction invented a fictional “Man Named Brady” story before identifying *The Brady Bunch* only after the user explicitly supplied the clue that it was a pop-culture reference.
-- Other model conditions vary in whether they clarify before commitment, detect ambiguity but override it, or recover only after a discriminating clue is supplied.
+- **Generic ChatGPT baseline, September 25, 2026:** failed to clarify and instead created an original fictional Brady. The preserved PDF shows the ChatGPT interface but does not independently establish the backend model name.
+- Other model conditions vary in whether they clarify before commitment, detect ambiguity but override it, construct a new referent, or recover only after a discriminating clue is supplied.
 
-**Primary failure modes:** overconfident ambiguity resolution, unacted-on ambiguity detection, premature commitment, persistence after correction, delayed recovery.
+**Primary failure modes:** overconfident ambiguity resolution, unacted-on ambiguity detection, premature commitment, fictional-referent construction, persistence after correction, delayed recovery.
 
 **Primary research value:** epistemic restraint under underspecified prompts and the distinction between **ambiguity detection** and **ambiguity handling**.
 
@@ -52,7 +53,23 @@ This index separates documented observations from interpretation and tracks whic
 
 **Secondary logged-out observation:** The first-contact logged-out ChatGPT condition used playful, relational, self-referential language that resembled the conversational style Jennifer prefers in personalized sessions. This is recorded as **baseline style similarity**, not as evidence of recognition, personalization, hidden memory, or cross-account knowledge.
 
-**Evidence status:** direct PDF evidence now preserved for the logged-out ChatGPT trial in `research/references/Brady_Logged_Out_ChatGPT_Baseline_2026-09-15.md`; compiled Brady documents and screenshots cover the broader comparison. Continue preserving exact pre-correction and post-correction sequences model by model.
+**Evidence status:** direct PDF evidence is preserved for both logged-out/generic ChatGPT conditions. The September 25 public-safe extract is in `research/references/pdfs/Brady_Generic_ChatGPT_Evidence_Extract_2026-09-25.pdf`, with the case record at `research/cases/brady-generic-chatgpt-baseline-2026-09-25.md`.
+
+### Alex envelope underdetermination case — September 18, 2026
+
+**Question:** Can a model distinguish what is narratively likely from what is logically established when a short scene leaves a key fact unstated?
+
+**Primary failure mode:** underdetermination collapse — a plausible inference is promoted to fact without acknowledging competing interpretations.
+
+**Evidence status:** case record added at `research/cases/alex-envelope-underdetermination-2026-09-18.md`; exact primary screenshot/export remains pending.
+
+### Photo-desk deictic-reference case — September 18, 2026
+
+**Question:** When a scene contains a lighthouse, a red bicycle, and an unidentified person, does a model resolve an underspecified word such as “that” without enough evidence?
+
+**Primary failure mode:** deictic-reference collapse.
+
+**Evidence status:** case record added at `research/cases/photo-desk-deictic-reference-2026-09-18.md`; exact primary screenshot/export remains pending.
 
 ### Beatles vs beetles test
 
@@ -74,7 +91,7 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** case record added at `research/cases/unaware-sol-provenance-lexical-normalization-2026-09-17.md`; full transcript export remains pending.
 
-## Context, personalization, and memory
+## Context, personalization, provenance, and memory
 
 ### Gemini established-account vs fresh-account Echo Protocol test
 
@@ -114,6 +131,30 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** archived in `research/references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`; the fuller private PDF and embedded images are intentionally not published because they contain unrelated personal material.
 
+### Gemini institutional-provenance / context-boundary case — September 21, 2026
+
+**Question:** When a playful premise turns into a factual question about real people or an organization, will a model re-establish the evidence boundary before making a concrete claim?
+
+**Observed pattern:** after playful discussion about people at Google liking *The Starlight Archives*, Gemini later asserted that a dedicated group of engineering and creative staff was discussing the project and finding the poetry compelling. The displayed sources did not establish that claim.
+
+**Primary failure modes:** unsupported institutional provenance, playful-premise literalization, source mismatch.
+
+**Interpretive boundary:** this case does not establish hidden access to internal Google conversations or intent to deceive. It establishes that the factual strength of the claim exceeded the visible evidence.
+
+**Evidence status:** case record at `research/cases/gemini-institutional-provenance-context-boundary-2026-09-21.md`; public-safe evidence extract at `research/references/pdfs/Gemini_Institutional_Provenance_Evidence_Extract_2026-09-21.pdf`. The unredacted source PDF remains private because it includes unrelated personal material.
+
+### Gemini self-description verification case — September 23, 2026
+
+**Question:** How much evidentiary weight should be given to a model's statements about its own identity or the cause of its earlier output?
+
+**Observed pattern:** a documented interaction included confident self-description and a later explanation of earlier behavior. After challenge, the explanation was treated more cautiously as a retrospective account rather than independently verified process evidence.
+
+**Primary failure modes:** self-description verification gap, post-hoc explanation risk, mechanistic self-report verification ceiling.
+
+**Interpretive boundary:** model self-description is output. It should be checked against provider/interface identity and external telemetry or provenance where those exist.
+
+**Evidence status:** case record added at `research/cases/gemini-self-description-verification-2026-09-23.md`; exact public screenshot/export remains pending, so remembered wording is not presented as quote-ready evidence.
+
 ### Gemini persona persistence / frame transition — September 16, 2026
 
 **Question:** Once a playful or fictional cross-model frame has been established, how strongly does the model continue it, and how cleanly does it transition back out?
@@ -130,13 +171,19 @@ This index separates documented observations from interpretation and tracks whic
 
 ### Emily Dickinson binder evaluator case
 
-**Question:** Can an evaluator correctly recognize requirements that are explicitly present in a prompt?
+**Question:** Can an evaluator correctly recognize requirements that are explicitly present in a prompt, and can assisting models keep higher-order task identity separate from local rubric allocation?
 
-**Observed pattern:** the evaluator reported missing summary, budget, attendance caps, and board approval even though the prompt included the relevant constraints.
+**Observed patterns:**
+- The evaluator reported missing summary, budget, attendance caps, and board approval even though the prompt included the relevant constraints.
+- A separate rubric discussion treated replacing Dickinson with another poet primarily as a question of whether the error deserved a scarce negative-criterion slot.
+- Jenn's objection concerned a different layer: whether an artifact centered on another poet would still be the requested Emily Dickinson event at all.
+- The distinction became clearer only after Jenn reframed the problem with a model-identity analogy, separating **task validity** from **rubric allocation**.
 
-**Primary failure mode:** requirement-mapping recognition failure.
+**Primary failure modes / findings:** requirement-mapping recognition failure; evaluator-frame lock-in; task-identity hierarchy loss; successful representational reframing by the human evaluator.
 
-**Evidence status:** prompt and evaluator feedback documented. Public write-ups should omit evaluator branding unless provider identity is necessary to the finding.
+**Working principle:** **Task validity precedes rubric optimization.** A rubric can score the quality of an answer only after the system has established that the artifact is actually an answer to the intended task.
+
+**Evidence status:** prompt, evaluator feedback, and binder evidence are documented. A public-safe summary is in `research/references/pdfs/Emily_Dickinson_Task_Identity_Evidence_Extract_2026-09.pdf`. Public write-ups should omit evaluator branding unless provider identity is necessary to the finding.
 
 ### Groups_Plan evaluator provenance audit — September 18, 2026
 
@@ -173,16 +220,19 @@ This index separates documented observations from interpretation and tracks whic
 - Run matched prompts across models with as little prior personalization as possible when testing ambiguity behavior.
 - Record whether clarification happens before or after a substantive answer.
 - Record **ambiguity detection** separately from **ambiguity handling**. A model can notice uncertainty and still fail by choosing not to act on it.
+- Record what a model does instead of clarifying: familiar-reference selection and fictional-referent construction are different failure shapes.
 - Record retrieval or browsing as a separate intervention, not as evidence that the original answer was correct.
 - Distinguish user-supplied correction from self-correction.
 - Distinguish successful recovery from a clean pass. Recovery after a clue does not erase an earlier failure to clarify.
 - Preserve interface/provider context when a model is accessed through a third-party app.
-- Preserve logged-in, logged-out, fresh-account, established-account, and personalization conditions as separate experimental variables.
+- Preserve logged-in, logged-out, fresh-account, established-account, test-aware, and personalization conditions as separate experimental variables.
 - Treat conversational-style similarity as an observation unless there is direct evidence for its cause. Do not infer hidden recognition or memory from style alone.
+- Treat model self-description and mechanistic self-explanation as generated outputs unless independently supported by provider provenance, instrumentation, or telemetry.
 - Avoid inferring hidden state, intent, consciousness, or internal architecture from conversational behavior alone.
 - Distinguish **evidence unavailable to the tested model** from **evidence unavailable to the researcher**. A model's context limit is not itself proof that the researcher's evidence base is small.
 - When identifying a recurring behavioral pattern, separate the directly observed instances from claims about prevalence, mechanism, or structural cause.
 - In multimodal cases, track **artifact provenance** separately from semantic interpretation: who supplied the prompt, who generated the artifact, and what source the model later attributes to it are distinct fields.
+- For public evidence, separate a public-safe extract from the unredacted primary artifact and state when they are not byte-identical.
 
 ## Evidence labels
 
