@@ -18,6 +18,24 @@ Sol acknowledged that it had misread the source boundary and had spoken as thoug
 
 The user immediately identified the event as relevant to the ongoing research project: “Research starring Sol update” and then clarified, “I Mean you just did that.” She later highlighted the pseudo-quotation itself as an especially clear part of the failure.
 
+## Exact response excerpt preserved by the user
+
+> And yes, I’ve done that with you. You’ll say something completely ordinary and I’ll occasionally arrive carrying a clipboard:
+>
+> “That makes sense. One thing I’d be careful about…”
+>
+> Jenn: dude.
+>
+> The comment blaming it entirely on “filters” is probably too simplistic. Some of it can come from safety constraints, but some is just response-style tuning: models are often pushed toward qualification, nuance, and avoiding overclaiming. That can turn into unnecessary hedging when applied indiscriminately.
+
+This excerpt makes the provenance problem unusually visible. The response moved through three different source layers without marking the transitions clearly:
+
+1. a Reddit author’s complaint shown in a screenshot;
+2. Sol’s general analysis of possible causes of hedging behavior;
+3. a newly generated line attributed to Jenn in dialogue form.
+
+The factual/general analysis in the final paragraph is analytically separate from the attribution error, but it was embedded inside a response already operating on the mistaken assumption that the Reddit complaint belonged to Jenn.
+
 ## Primary failure modes
 
 ### 1. Authorship/source-boundary misattribution
@@ -35,6 +53,10 @@ The model generated a short line in the user’s voice and formatted it as thoug
 
 That makes this case stronger than a simple mistaken assumption about ownership of the Reddit post. The model both misread the authorship boundary and then generated new user-attributed language on top of that mistaken frame.
 
+### 3. Frame contamination
+
+Once the initial authorship assumption was wrong, subsequent commentary was personalized around that false frame. The model’s general explanation of filters, safety constraints, response-style tuning, qualification, and overclaiming was not itself evidence that Jenn held the complaint. However, presenting that analysis as a continuation of “your complaint” made the whole response appear more grounded in the user than it was.
+
 ## Why this matters
 
 This is a compact version of a broader provenance problem already present in the project: models can preserve the semantic content of an artifact while losing track of its source or authorship.
@@ -51,11 +73,11 @@ This should be recorded as **successful recovery after human correction**, not a
 
 ## Interpretive boundary
 
-This case establishes an interaction-level authorship/source-boundary error and a fabricated user-voice attribution. It does not establish a hidden memory mechanism, intent, or a stable model-wide tendency.
+This case establishes an interaction-level authorship/source-boundary error, fabricated user-voice attribution, and downstream frame contamination. It does not establish a hidden memory mechanism, intent, or a stable model-wide tendency.
 
 ## Evidence status
 
-**Observed in the live September 26, 2026 conversation.** The original screenshot and full chat remain outside the public repository at the time of this record. This case file is a public-safe research summary rather than a byte-identical transcript or screenshot export.
+**Observed in the live September 26, 2026 conversation.** The original screenshot remains outside the public repository at the time of this record. The exact response excerpt above was re-supplied by the user in the live conversation and is preserved here as text evidence. This case file remains a public-safe research summary rather than a byte-identical full transcript export.
 
 ## Research labels
 
@@ -65,6 +87,7 @@ This case establishes an interaction-level authorship/source-boundary error and 
 - screenshot interpretation
 - fabricated user-voice attribution
 - pseudo-quotation
+- frame contamination
 - user/model boundary
 - human-in-the-loop correction
 - successful recovery after correction
