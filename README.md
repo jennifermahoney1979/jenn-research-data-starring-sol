@@ -19,6 +19,7 @@ This repository turns model interactions into portfolio-ready AI quality-assuran
 - **Context-boundary cases** — examines when a model uses context that is unnecessary for the current request.
 - **Sticky framing and correction behavior** — studies whether a model can release an incorrect interpretation after correction.
 - **Multimodal provenance and authorship tracking** — examines whether a model preserves the distinction between user-authored input and model-generated artifacts when images, screenshots, and prior outputs are reintroduced later in the conversation.
+- **Sol screenshot authorship-boundary case** — documents a September 26 interaction where a Reddit screenshot shared by the user was treated conversationally as though its complaint were the user’s own, followed by immediate correction after the user challenged the attribution.
 - **Institutional-provenance case** — documents a September 21 Gemini response that made a concrete claim about Google staff activity without supporting sources.
 - **Self-description verification** — treats model statements about identity or internal process as generated output unless independently supported by interface, provider, telemetry, or provenance evidence.
 - **Cross-model comparison** — compares how different systems handle the same ambiguous or underspecified prompt.
