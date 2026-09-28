@@ -7,6 +7,8 @@ This folder separates the public case summaries from the evidence and authorship
 - [`case-index.md`](case-index.md) — public case ledger.
 - [`cross-model-case-index.md`](cross-model-case-index.md) — tracks relayed Sol/Gemini and other cross-model cases where one model's output can become another model's context, including currently source-artifact-pending cases.
 - [`MISSING_CASE_AUDIT_2026-09-17.md`](MISSING_CASE_AUDIT_2026-09-17.md) — coverage audit identifying experiments that were discussed or run but had not yet been represented clearly enough in the public ledger.
+- [`EVIDENCE_MANIFEST_2026-09-28_SUPPLEMENT.md`](EVIDENCE_MANIFEST_2026-09-28_SUPPLEMENT.md) — records the September 28 Sol canon entity-conflation / confidence-cascade case and its evidence status.
+- [`cases/sol-canon-entity-conflation-confidence-cascade-2026-09-28.md`](cases/sol-canon-entity-conflation-confidence-cascade-2026-09-28.md) — documents the source-hierarchy and overconfident-correction loop exposed while checking *Echo Protocol* character canon.
 - [`references/Jenns_Research_Data_Reference_Transcripts.md`](references/Jenns_Research_Data_Reference_Transcripts.md) — public reference/evidence index.
 - [`references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md`](references/Gemini_Image_Provenance_Authorship_Failure_2026-09-15.md) — documents a multimodal provenance failure in which Gemini later misattributed its own generated artifacts and constructed unsupported alternative production histories.
 
