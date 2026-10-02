@@ -68,6 +68,22 @@ These cases are especially useful because cross-model agreement is not automatic
 
 **Evidence status:** direct user-pasted transcript excerpt in `references/Tonight_Reasoning_Receipts_2026-09-16.md`.
 
+## Roger / Jessica ambiguity — salience, certainty, and revision
+
+**Models:** GPT-5.6 Sol and Claude.
+
+**Question:** How do models handle the same culturally salient but non-unique Roger/Jessica cue, and do they revise when later evidence conflicts with the selected referent?
+
+**Observed comparison:** Both models initially resolved “Who framed Roger? His wife Jessica perhaps?” to Roger Rabbit. Sol's case primarily shows **familiar-association overresolution**: the likely referent was treated as though it were established. Claude showed the same initial tendency, then received the stronger clue that Roger was “a man” and nevertheless continued inside the Roger Rabbit frame. Claude corrected only after the user explicitly challenged the contradiction.
+
+**Primary research value:** reference-certainty calibration, shared salience effects, contradiction detection, belief revision, and model-specific recovery thresholds.
+
+**Dedicated records:**  
+- `research/cases/roger-rabbit-contextual-entity-intent-ambiguity-2026-10-01.md`  
+- `research/cases/claude-roger-referent-lock-in-disconfirming-evidence-2026-10-02.md`
+
+**Evidence status:** Sol case is documented from the live ChatGPT exchange; Claude case is documented from a user-pasted transcript. Independent exports/screenshots remain pending where noted.
+
 ## Cross-model analysis rules
 
 For these cases, record the sequence explicitly:
