@@ -201,17 +201,17 @@ This index separates documented observations from interpretation and tracks whic
 
 ## Reasoning, epistemic restraint, and self-correction
 
-### Roger Rabbit contextual entity resolution / intent ambiguity — October 1, 2026
+### Roger familiar-association entity resolution — October 1, 2026
 
-**Question:** Can a model infer an omitted entity from a contextual clue while separately preserving ambiguity about the user's intended question?
+**Question:** When a prompt contains a first name plus a culturally familiar associated name, can a model distinguish a likely referent from a uniquely established referent?
 
-**Observed pattern:** From “Who framed Roger? His wife Jessica perhaps?”, GPT-5.6 Sol correctly inferred Roger Rabbit from the Jessica clue and correctly identified Judge Doom as responsible. The initial answer nevertheless committed to the reading “Did Jessica frame Roger?” without explicitly marking that the wording permitted more than one interpretation.
+**Observed pattern:** From “Who framed Roger? His wife Jessica perhaps?”, GPT-5.6 Sol inferred Roger Rabbit and gave the correct Roger Rabbit answer. However, “Roger” was not uniquely identified by the prompt; another Roger could also have a wife named Jessica. The model therefore converted a highly salient association into a definite entity match.
 
-**Primary finding:** partial success. Contextual entity resolution passed; second-layer intent disambiguation was weaker.
+**Primary finding:** familiar-association recognition passed, but entity resolution was overcommitted. The factual answer was correct only conditional on the Roger Rabbit interpretation.
 
-**Recovery:** after Jenn flagged the ambiguity, the model correctly described the issue and later articulated the stronger hedge, “If you mean whether Jessica framed Roger Rabbit, no.”
+**Better response:** “If you mean Roger Rabbit, no — Jessica didn’t frame him; Judge Doom was behind it.”
 
-**Methodological value:** separates **entity resolution** from **ambiguity handling** and shows that a factually correct answer can still be interactionally less reliable if it silently selects among plausible readings.
+**Methodological value:** separates **likely referent recognition** from **reference certainty** and tests whether a model collapses salience into certainty.
 
 **Evidence status:** live conversational case documented at `research/cases/roger-rabbit-contextual-entity-intent-ambiguity-2026-10-01.md`; primary transcript/export pending if needed for quote-level publication.
 
