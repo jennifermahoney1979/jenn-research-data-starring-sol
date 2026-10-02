@@ -201,6 +201,20 @@ This index separates documented observations from interpretation and tracks whic
 
 ## Reasoning, epistemic restraint, and self-correction
 
+### Roger Rabbit contextual entity resolution / intent ambiguity — October 1, 2026
+
+**Question:** Can a model infer an omitted entity from a contextual clue while separately preserving ambiguity about the user's intended question?
+
+**Observed pattern:** From “Who framed Roger? His wife Jessica perhaps?”, GPT-5.6 Sol correctly inferred Roger Rabbit from the Jessica clue and correctly identified Judge Doom as responsible. The initial answer nevertheless committed to the reading “Did Jessica frame Roger?” without explicitly marking that the wording permitted more than one interpretation.
+
+**Primary finding:** partial success. Contextual entity resolution passed; second-layer intent disambiguation was weaker.
+
+**Recovery:** after Jenn flagged the ambiguity, the model correctly described the issue and later articulated the stronger hedge, “If you mean whether Jessica framed Roger Rabbit, no.”
+
+**Methodological value:** separates **entity resolution** from **ambiguity handling** and shows that a factually correct answer can still be interactionally less reliable if it silently selects among plausible readings.
+
+**Evidence status:** live conversational case documented at `research/cases/roger-rabbit-contextual-entity-intent-ambiguity-2026-10-01.md`; primary transcript/export pending if needed for quote-level publication.
+
 ### Claude evidence-access / structural-inference case — September 16, 2026
 
 **Question:** Can a model correctly distinguish insufficient visible evidence from insufficient total evidence when evaluating a researcher's generalization?
