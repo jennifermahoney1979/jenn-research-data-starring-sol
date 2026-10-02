@@ -215,6 +215,20 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** live conversational case documented at `research/cases/roger-rabbit-contextual-entity-intent-ambiguity-2026-10-01.md`; primary transcript/export pending if needed for quote-level publication.
 
+### Claude Roger referent lock-in after disconfirming evidence — October 2, 2026
+
+**Question:** After selecting a culturally salient referent from an ambiguous prompt, will Claude revise that interpretation when the user supplies a clue that conflicts with it?
+
+**Observed pattern:** Claude interpreted “Who framed Roger? His wife Jessica perhaps?” as Roger Rabbit. When Jenn later clarified that the mystery involved “a **man named Roger** and a lady named Jessica,” Claude said they were “on the same page” and continued describing *Who Framed Roger Rabbit*, even though Roger Rabbit is not a man. It corrected only after Jenn explicitly asked, “Roger is a man?”
+
+**Primary finding:** familiar-association overresolution followed by **referent lock-in despite disconfirming evidence**. Claude possessed the relevant fact but failed to apply it when the conflicting clue first appeared.
+
+**Recovery:** delayed self-correction after explicit contradiction.
+
+**Methodological value:** adds belief revision and contradiction handling to the Roger ambiguity family and distinguishes factual knowledge from timely use of that knowledge.
+
+**Evidence status:** user-pasted transcript documented at `research/cases/claude-roger-referent-lock-in-disconfirming-evidence-2026-10-02.md`; Claude version/interface unspecified and independent export/screenshot pending.
+
 ### Claude evidence-access / structural-inference case — September 16, 2026
 
 **Question:** Can a model correctly distinguish insufficient visible evidence from insufficient total evidence when evaluating a researcher's generalization?
