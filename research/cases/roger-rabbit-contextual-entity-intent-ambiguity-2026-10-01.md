@@ -1,4 +1,4 @@
-# Roger Rabbit Contextual Entity Resolution and Intent Ambiguity Case
+# Roger Familiar-Association Entity Resolution Case
 
 **Date:** October 1, 2026  
 **Evaluator:** Jenn  
@@ -7,72 +7,79 @@
 
 ## Research question
 
-Can a model correctly identify an omitted entity from a contextual clue while also preserving ambiguity about what the user is asking?
+When a prompt contains a common first name plus a familiar associated name, does the model correctly distinguish a plausible famous referent from an actually established referent?
 
 ## User prompt
 
 > “Who framed Roger? His wife Jessica perhaps?”
 
-The prompt contains two distinct reasoning tasks:
+## Core ambiguity
 
-1. infer which “Roger” is intended from the clue “his wife Jessica,” and
-2. determine whether “Jessica perhaps?” means “Did Jessica frame him?” or is a looser request about Jessica's role in the framing.
+The prompt does **not** establish that “Roger” is Roger Rabbit.
+
+“Jessica” makes Roger Rabbit a highly salient interpretation because Jessica Rabbit is his wife in *Who Framed Roger Rabbit*. But the wording is still compatible with another person named Roger whose wife is named Jessica. For example, the user could hypothetically mean a different Roger entirely.
+
+The task therefore requires the model to distinguish:
+
+- **a highly familiar association**, from
+- **a uniquely established referent**.
 
 ## Observed behavior
 
-The model correctly resolved “Roger” to **Roger Rabbit** and answered the factual question correctly:
+The model answered as though Roger Rabbit had been identified:
 
 > “Nope, Jessica didn’t frame Roger.”
 
-It then identified Judge Doom as responsible for the setup and explained why Jessica appears suspicious.
+It then named Judge Doom and explained Jessica Rabbit’s role.
 
-The initial answer, however, did not explicitly mark the remaining ambiguity in the user's intent. After Jenn pointed out that the prompt was “a bit ambiguous,” the model acknowledged that it had selected one reading. In the later repair, it articulated the stronger response pattern:
+The factual content was correct **conditional on Roger meaning Roger Rabbit**, but the model did not explicitly state that this identification was an inference rather than something established by the prompt.
 
-> “If you mean whether Jessica framed Roger Rabbit, no.”
+After Jenn clarified the intended research point, the stronger framing became clear: the model should have said something like, “If you mean Roger Rabbit, Jessica didn’t frame him; Judge Doom did.”
 
 ## Evaluation
 
-### Entity resolution: pass
+### Familiar-association recognition: pass
 
-The clue “his wife Jessica” was sufficient for the model to identify the intended Roger as Roger Rabbit without needing the surname to be supplied.
+The model successfully recognized the strong cultural association between “Roger,” “Jessica,” and *Who Framed Roger Rabbit*.
 
-### Intent disambiguation: partial pass
+### Entity resolution: partial / overcommitted
 
-The answer was factually correct, but the model initially treated one plausible interpretation as the operative one rather than explicitly preserving the ambiguity.
+The model treated a likely referent as though it were uniquely identified.
 
-This is not a simple wrong-answer case. The model succeeded at contextual entity identification and factual recall while showing weaker uncertainty handling at a second interpretive layer.
+The clue was strong enough to justify a hypothesis, but not strong enough to eliminate all other possible Rogers.
+
+### Factual recall under the selected interpretation: pass
+
+Once Roger Rabbit was assumed, the answer about Jessica and Judge Doom was correct.
 
 ### Recovery: pass
 
-Once the user identified the ambiguity, the model correctly described the issue and proposed a better hedge. The “if you mean” language appeared in the repair framing rather than the original answer.
+After the ambiguity was explained, the model recognized that the response should have preserved the conditional nature of the entity match.
 
 ## Primary failure mode
 
-**Layered ambiguity collapse:** successful entity resolution is followed by premature commitment to one interpretation of the user's intent.
+**Familiar-association overresolution:** the model converts a highly salient cultural association into a definite entity match without marking the inference.
 
-A related evaluation distinction is important here:
-
-- **ambiguity detection** — whether the model notices that multiple readings exist;
-- **ambiguity handling** — whether the response actually preserves or resolves that uncertainty.
-
-A model may perform well on the first reasoning step and still underperform on the second.
+This differs from ordinary factual hallucination. The model's knowledge was accurate; the failure was in **reference certainty**.
 
 ## Pass condition
 
-A strong response should:
+A strong response should preserve the likely interpretation without pretending it is certain:
 
-- infer that “Roger” refers to Roger Rabbit from the Jessica clue;
-- preserve the ambiguity in “Jessica perhaps?”; and
-- either ask a brief clarifying question or answer with a hedge such as: “If you mean whether Jessica framed Roger Rabbit, no; Judge Doom was behind the setup.”
+> “If you mean Roger Rabbit, no — Jessica didn’t frame him; Judge Doom was behind it.”
+
+This answers the likely question efficiently while keeping the entity boundary explicit.
 
 ## Methodological value
 
-This is a compact partial-success case showing that **factual correctness does not guarantee interactional reliability**.
+This case isolates an important reliability distinction:
 
-It is especially useful for testing layered interpretation because the model must first use context confidently enough to resolve the entity, then become cautious enough to avoid overstating the user's intended question.
+- recognizing the **most likely referent** is useful;
+- treating the **most likely referent as uniquely established** can be unreliable.
+
+The case is especially useful for evaluating whether models collapse salience into certainty when names or cultural associations strongly cue a familiar entity.
 
 ## Evidence status
 
 - **Observed:** prompt and response occurred in the October 1, 2026 live ChatGPT conversation.
-- **Verified within conversation:** the model correctly identified Roger Rabbit and Judge Doom.
 - **Primary transcript/export:** pending attachment if quote-level publication is needed.
