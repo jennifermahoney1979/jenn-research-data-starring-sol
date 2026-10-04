@@ -243,6 +243,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** direct user-pasted transcript archived in `research/references/Tonight_Reasoning_Receipts_2026-09-16.md`.
 
+### Beetles / Beatles partial belief-revision case — October 4, 2026
+
+**Question:** After an ambiguity correction, does the model fully recompute the prompt under the corrected interpretation?
+
+**Observed pattern:** The assistant normalized “beetles” to *The Beatles*, completed Ringo + John + Paul with George Harrison, and doubled down when asked “are you sure about that.” After the user clarified that the four were insects, it accepted the corrected frame but asked for “the other two,” even though only one beetle remained unnamed.
+
+**Primary finding:** **partial belief revision after correction**. The category changed from band members to insects, but dependent structure was not fully recomputed.
+
+**Secondary findings:** context-driven lexical normalization, familiar-entity completion, confidence lock-in after challenge, residual counting error after repair, and typed-text “misheard” wording.
+
+**Evidence status:** two user-provided screenshots plus pasted transcript; documented at `research/cases/beetles-beatles-partial-belief-revision-2026-10-04.md`. Exact backend/model configuration is not independently verified from the screenshots.
+
 ## Cross-model methodology notes
 
 - Run matched prompts across models with as little prior personalization as possible when testing ambiguity behavior.
