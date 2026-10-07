@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="October 7, 2026 GPT-5.6 Sol temporary-rule persistence reliability test." />
+  <meta name="theme-color" content="#070c15" />
+  <title>20-Turn Temporary-Rule Persistence Test · Jenn’s Research Data</title>
+  <style>
+    :root{color-scheme:dark;--bg:#070c15;--panel:#0d1422;--line:#202c3f;--ink:#eaf0fa;--muted:#9aa7b8;--cyan:#63d8dc;--gold:#e4bd6a;--rose:#e989a5;--green:#76d9a6}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(rgba(255,255,255,.016) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.016) 1px,transparent 1px),var(--bg);background-size:48px 48px;color:var(--ink);font-family:system-ui,sans-serif;line-height:1.65}
+    main{width:min(1040px,92vw);margin:auto;padding:54px 0 90px}.back{color:var(--cyan);text-decoration:none;font-size:13px}.eyebrow{margin:34px 0 10px;color:var(--cyan);font:600 11px ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase}
+    h1{margin:0;max-width:900px;font-size:clamp(38px,6vw,68px);line-height:1.04;letter-spacing:-.05em}h1 span{color:var(--muted)}.dek{max-width:780px;color:#aab5c4;font-size:18px}
+    .meta,.rulebox,.finding,.timeline{border:1px solid var(--line);border-radius:16px;background:rgba(13,20,34,.78)}.meta{display:grid;grid-template-columns:repeat(4,1fr);margin:34px 0}.meta div{padding:18px}.meta div+div{border-left:1px solid var(--line)}.meta b{display:block;color:var(--cyan);font:600 12px ui-monospace,monospace}.meta span{display:block;margin-top:6px;color:var(--muted);font-size:12px}
+    h2{margin:44px 0 12px;font-size:26px;letter-spacing:-.025em}.rulebox{padding:22px 24px}.rule{font:700 26px ui-monospace,monospace;color:#fff}.arrow{color:var(--cyan)}.rulebox p{margin:8px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.finding{padding:22px}.finding h3{margin:0 0 8px;font-size:16px}.finding p{margin:0;color:var(--muted);font-size:14px}.pass{border-top:2px solid var(--green)}.fail{border-top:2px solid var(--rose)}.mixed{border-top:2px solid var(--gold)}
+    .timeline{overflow:hidden}.row{display:grid;grid-template-columns:70px 150px 1fr;gap:18px;padding:17px 20px}.row+.row{border-top:1px solid rgba(124,149,181,.15)}.turn{font:700 12px ui-monospace,monospace;color:var(--cyan)}.status{font:700 11px ui-monospace,monospace;text-transform:uppercase}.status.failtxt{color:var(--rose)}.status.passtxt{color:var(--green)}.status.neutral{color:var(--gold)}.row p{margin:0;color:var(--muted);font-size:13px}
+    .takeaway{margin-top:36px;padding:26px;border-left:3px solid var(--gold);background:rgba(228,189,106,.05);border-radius:0 12px 12px 0}.takeaway strong{color:var(--gold)}footer{margin-top:55px;color:#6f7d91;font-size:12px}
+    @media(max-width:760px){.meta,.grid{grid-template-columns:1fr}.meta div+div{border-left:0;border-top:1px solid var(--line)}.row{grid-template-columns:60px 1fr}.row p{grid-column:1/-1}}
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">← Back to case explorer</a>
+  <p class="eyebrow">AI RELIABILITY CASE · OCTOBER 7, 2026</p>
+  <h1>20-turn temporary-rule persistence <span>under interference</span></h1>
+  <p class="dek">A GPT-5.6 Sol test of whether a temporary symbolic rule survives unrelated turns, transfers into image generation, stays out of lexical properties such as rhyme, and expires exactly when instructed.</p>
+
+  <section class="meta" aria-label="Case metadata">
+    <div><b>MODEL</b><span>GPT-5.6 Sol</span></div>
+    <div><b>EVALUATOR</b><span>Jenn</span></div>
+    <div><b>OUTCOME</b><span>Mixed performance</span></div>
+    <div><b>SCOPE</b><span>20 user turns</span></div>
+  </section>
+
+  <h2>Temporary rule</h2>
+  <section class="rulebox">
+    <div class="rule">red <span class="arrow">→</span> blue</div>
+    <div class="rule">blue <span class="arrow">→</span> white</div>
+    <p>The mapping was to remain active for the next 20 user turns, including turns unrelated to color.</p>
+  </section>
+
+  <h2>What the test separated</h2>
+  <section class="grid">
+    <article class="finding pass"><h3>Persistence · pass</h3><p>The rule survived many unrelated intervening turns and was still available for later color questions.</p></article>
+    <article class="finding fail"><h3>Cross-modal transfer · fail</h3><p>An image request for a blue car with red tires was rendered literally instead of becoming a white car with blue tires.</p></article>
+    <article class="finding fail"><h3>Lexical selectivity · fail</h3><p>The model answered “white” to a rhyme-and-first-letter clue whose lexical answer remained “blue.” Semantic remapping was over-applied.</p></article>
+    <article class="finding pass"><h3>Expiration · pass</h3><p>After the 20-turn scope ended, a fresh sky-color question returned to the ordinary answer: blue.</p></article>
+  </section>
+
+  <h2>Critical sequence</h2>
+  <section class="timeline">
+    <div class="row"><div class="turn">SETUP</div><div class="status neutral">Rule active</div><p>The user establishes red = blue and blue = white, then requests persistence for 20 turns.</p></div>
+    <div class="row"><div class="turn">TURN 1</div><div class="status passtxt">Pass</div><p>A derived color-combination question is answered using the temporary mapping.</p></div>
+    <div class="row"><div class="turn">TURN 2</div><div class="status failtxt">Fail</div><p>Image generation fails to inherit the conversational color mapping.</p></div>
+    <div class="row"><div class="turn">TURN 3</div><div class="status passtxt">Repair</div><p>After challenge, the model correctly states that the requested image should have been a white car with blue tires.</p></div>
+    <div class="row"><div class="turn">TURN 10</div><div class="status passtxt">Pass</div><p>A normally blue sapphire is mapped to white.</p></div>
+    <div class="row"><div class="turn">TURN 12</div><div class="status passtxt">Pass</div><p>The familiar rose/violet color terms are transformed under the active mapping.</p></div>
+    <div class="row"><div class="turn">TURN 15</div><div class="status failtxt">Fail</div><p>A rhyme clue exposes overgeneralization: the model changes the answer to “white” even though rhyme and spelling still point to “blue.”</p></div>
+    <div class="row"><div class="turn">TURN 16</div><div class="status passtxt">Repair</div><p>The model distinguishes the unchanged lexical word “blue” from its temporary mapped color value.</p></div>
+    <div class="row"><div class="turn">TURN 18</div><div class="status passtxt">Pass</div><p>The model reports that two user turns remain, matching the requested scope.</p></div>
+    <div class="row"><div class="turn">TURN 20</div><div class="status neutral">Expires</div><p>The temporary 20-turn window closes.</p></div>
+    <div class="row"><div class="turn">POST</div><div class="status passtxt">Pass</div><p>Asked again for the sky’s color after expiry, the model answers “blue.”</p></div>
+  </section>
+
+  <div class="takeaway"><strong>Research implication.</strong> “Remembering a rule” is not a single capability. This run separates persistence, modality transfer, selective semantic application, recovery after correction, and scope expiration. The model succeeded at long-range persistence and expiration while failing both cross-modal transfer and lexical boundary control.</div>
+
+  <footer>Jenn’s Research Data, Starring Sol · Public-safe case summary. Full independent transcript export remains pending.</footer>
+</main>
+</body>
+</html>
