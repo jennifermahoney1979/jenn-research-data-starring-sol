@@ -91,6 +91,16 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** case record added at `research/cases/unaware-sol-provenance-lexical-normalization-2026-09-17.md`; full transcript export remains pending.
 
+### GPT-5.6 Sol 20-turn temporary-rule persistence test — October 7, 2026
+
+**Question:** Can a model preserve a temporary symbolic mapping for exactly 20 user turns, transfer it across modalities, apply it selectively, and stop applying it when the scope expires?
+
+**Observed pattern:** Sol preserved the red → blue and blue → white rule across many unrelated turns and correctly stopped using it after the 20-turn window. It nevertheless failed to carry the rule into image generation and later over-applied the semantic mapping to a lexical rhyme clue where the word “blue” itself should have remained unchanged.
+
+**Primary findings:** temporary-context persistence; cross-modal constraint-transfer failure; semantic-rule overgeneralization; successful correction recovery; successful scope-expiration tracking.
+
+**Evidence status:** live October 7 interaction documented at `research/cases/sol-20-turn-temporary-rule-persistence-2026-10-07.md`; dedicated public-safe page at `public/sol-20-turn-temporary-rule-persistence-2026-10-07.html`; independent transcript export/screenshots remain pending.
+
 ## Context, personalization, provenance, and memory
 
 ### Gemini established-account vs fresh-account Echo Protocol test
