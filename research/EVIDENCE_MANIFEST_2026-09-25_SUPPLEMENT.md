@@ -82,6 +82,18 @@ The existing Dickinson evaluator work is now indexed with an additional distinct
 
 A full subject swap can be catastrophic to the identity of the requested task even if a dedicated negative criterion is not the best use of a scarce rubric slot. The human intervention in this case was representational: Jenn changed the comparison structure until the higher-order task-validity gate became salient.
 
+### Ernest / Earnest reference ambiguity — October 11
+
+**Case:** `research/cases/ernest-earnest-premature-referent-commitment-2026-10-11.md`
+
+**Observed:** in response to “What’s so important about being a guy named Ernest,” ChatGPT selected *The Importance of Being Earnest* without clarifying or marking the reading as conditional. After the user challenged the choice and offered Hemingway as an **example** of an alternative Ernest, the assistant acknowledged its premature assumption.
+
+**Working classification:** title-salience-driven referent commitment; human-triggered ambiguity recognition.
+
+**Evidence:** selected verbatim excerpts copied into a public-safe case record from the live October 11 thread. A separate platform export or screenshot has not been attached; the hypothetical Hemingway example must not be misrepresented as a declaration of original intent.
+
+**Human work demonstrated:** ambiguity probe, challenge to inferred reference certainty, and discriminating counterexample.
+
 ## Cases intentionally not published from private material
 
 Private CNTXT/Slack exchanges, employment communications, and other restricted material are not included in this public research supplement. Their absence should not be interpreted as missing evidence from the private working archive.
