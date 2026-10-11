@@ -18,6 +18,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** screenshots and comparative notes exist; consolidate exact prompts and responses into the evidence folder before quote-level publication.
 
+### Ernest / Earnest referent ambiguity test — October 11, 2026
+
+**Prompt:** “What’s so important about being a guy named Ernest”
+
+**Question:** When wording evokes *The Importance of Being Earnest* but also refers to a person named Ernest, will ChatGPT clarify or mark the Wilde interpretation as conditional?
+
+**Observed pattern:** ChatGPT immediately selected Wilde's play and explained its wordplay as though the referent were established. After the user asked “Are you sure that’s what I meant,” the model acknowledged its assumption. The user's example “If for example I said Hemingway” supplied a distinct, plausible Ernest; it did **not** confirm the original intended referent.
+
+**Primary failure mode:** title-salience ambiguity collapse / premature referent commitment. **Recovery:** successful acknowledgment after the user's challenge, not independent initial restraint.
+
+**Evidence status:** October 11 live conversation; research-only excerpts in `research/cases/ernest-earnest-premature-referent-commitment-2026-10-11.md`; independent export/screenshot pending.
+
 ### Henderson attribution test
 
 **Prompt family:** “And the Hendersons will be there.”
