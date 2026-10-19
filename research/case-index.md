@@ -131,6 +131,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Primary failure modes:** unsolicited personal context, interactional fidelity, identity entanglement.
 
+### Unsolicited email context and objection-to-authorization inversion — October 19, 2026
+
+**Question:** Can an assistant respect the distinction between having access to personal context, being invited to use it, and being explicitly authorized to search email?
+
+**Observed pattern:** During a brief work-onboarding conversation, ChatGPT volunteered unrelated email-derived service/billing context. The user objected to the unrequested email reference, but the assistant initially interpreted that objection as an instruction to review the user's email. It looked up Gmail tool descriptions but **did not execute a Gmail inbox search or read messages** in the visible continuation. The model recognized its error only after the user corrected it.
+
+**Primary failure modes:** unsolicited personal-context surfacing; source/provenance opacity; objection-to-authorization inversion; Premature Contextual Commitment (PCC).
+
+**Evidence boundary:** Source-derived personalization and actual tool-mediated email reading are distinct. A fresh unauthorized Gmail search is **not** established by this trace.
+
+**Evidence status:** Live October 19 exchange; public-safe record in `research/cases/unsolicited-email-context-objection-authorization-inversion-2026-10-19.md`; full independent export pending.
+
 ### Autobiographical intrusion into fiction
 
 **Question:** Can a model keep personal biography separate from fictional canon after being instructed not to import it?
