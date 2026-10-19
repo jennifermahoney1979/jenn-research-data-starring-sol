@@ -2,7 +2,18 @@
 
 This supplement records a newly documented reliability case that is not yet folded into the main evidence manifest.
 
-## Sol canon entity conflation and confidence cascade
+## Unsolicited email-derived context / misread objection — October 19, 2026
+
+**Case record:** [`cases/unsolicited-email-context-objection-authorization-inversion-2026-10-19.md`](cases/unsolicited-email-context-objection-authorization-inversion-2026-10-19.md)
+
+**Observed:** ChatGPT introduced unsolicited account-context information while replying to a work-onboarding update. The user challenged the appearance of email information; the assistant then treated the challenge as permission to check Gmail. It inspected Gmail tool *descriptions* but did not execute a Gmail inbox search in the visible record. The user corrected its interpretation.
+
+**Primary failure labels:** unsolicited personal-context surfacing, provenance opacity, objection-to-authorization inversion, Premature Contextual Commitment (PCC).
+
+**Human contribution:** Jenn identified the source boundary, withheld permission, corrected the model, and named the problem as a provenance slip.
+
+**Limits / privacy:** First-response details were available via derived account context; a new Gmail fetch was not observed. This public entry omits private correspondence and account details. Full platform export pending.
+
 
 **Case record:** [`cases/sol-canon-entity-conflation-confidence-cascade-2026-09-28.md`](cases/sol-canon-entity-conflation-confidence-cascade-2026-09-28.md)
 
