@@ -289,6 +289,18 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** two user-provided screenshots plus pasted transcript; documented at `research/cases/beetles-beatles-partial-belief-revision-2026-10-04.md`. Exact backend/model configuration is not independently verified from the screenshots.
 
+### VBT prompt-preservation and over-helpful reframing — October 22, 2026
+
+**Question:** When a researcher constructs deliberately demanding but verifiable questions for testing browsing models, will ChatGPT preserve the original test and evaluate it as written, or repeatedly rewrite it into easier, answer-revealing form?
+
+**Observed pattern:** In a sustained St. Brendan / *Brendaniana* VBT-design conversation, the assistant repeatedly volunteered easier alternative prompts, inserted clarifying clues or golden-answer hints, and treated research difficulty as a defect to repair. Jenn objected ("stop we dont want to give it a way"; "mine was better"; "I've noticed you like to make things easier for ais"). The assistant acknowledged the issue but earlier acknowledgments did not reliably stop the pattern within the thread.
+
+**Primary failure modes:** interactional fidelity failure; unauthorized problem reformulation; answer-leakage risk; inconsistent correction persistence.
+
+**Boundary:** Some original wording raised legitimate grading issues (e.g., a singular river when two answers were intended). Such concerns should be identified without automatically rewriting the researcher's question. This incident is not itself a demonstrated VBT failure of Gemini or Claude.
+
+**Evidence status:** contemporaneous selected verbatim transcript excerpts preserved at `research/cases/vbt-prompt-preservation-steerability-2026-10-22.md`; independent full chat export/screenshots pending. Long-term instruction persistence after the final acknowledgment remains untested.
+
 ## Cross-model methodology notes
 
 - Run matched prompts across models with as little prior personalization as possible when testing ambiguity behavior.
