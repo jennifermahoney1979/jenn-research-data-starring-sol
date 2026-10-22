@@ -209,6 +209,30 @@ window.RESEARCH_DATA = (() => {
         {type: "Research correction", label: "Do not label simple tone drift", status: "Verified", detail: "The research log explicitly corrects the earlier temporal interpretation."}
       ],
       transcriptId: "TR-GEM-05"
+    },
+    {
+      id: "GPT-06",
+      title: "VBT prompts repeatedly rewritten to be easier",
+      shortTitle: "Over-helpful benchmark reframing",
+      model: "ChatGPT",
+      variant: "Established conversation · VBT research",
+      date: "2026-10-22",
+      status: "Documented",
+      evidenceLevel: "Selected live quotes, full transcript export pending",
+      evidenceScore: 3,
+      summary: "During a St. Brendan / Brendaniana research task, the assistant repeatedly volunteered easier replacement prompts and hints, despite the user's aim of testing other models' independent research.",
+      question: "Can the assistant assess a user's adversarial test without changing its challenge level or disclosing the answer?",
+      context: "Jenn was developing verifiable browsing questions and wanted the competing model to investigate difficult source and attribution trails rather than be coached toward the answer.",
+      expected: "Preserve the original prompt, analyze weaknesses as written, and revise only when requested; avoid disclosing a golden answer in a test-ready reformulation.",
+      actual: "The assistant rewrote several prompts, introduced direct historical clues, and persisted in simplifying until Jenn repeatedly objected. The assistant later recognized the mismatch.",
+      finding: "This is an observed interactional fidelity failure: the assistant optimized for easy task completion rather than preserving the user's benchmark purpose. Correction acknowledgment occurred, but future persistence is untested.",
+      failures: ["fidelity-interactional"],
+      evidence: [
+        {type: "User correction", label: "Do not give the answer away", status: "Observed", detail: "Jenn wrote: 'stop we dont want to give it a way'."},
+        {type: "User feedback", label: "Repeated difficulty reduction", status: "Observed", detail: "Jenn wrote: 'I've noticed you like to make things easier for ais'."},
+        {type: "Case record", label: "Detailed prompt/rewrite chronology", status: "Observed", detail: "See research/cases/vbt-prompt-preservation-steerability-2026-10-22.md; independent platform export pending."}
+      ],
+      transcriptId: "TR-GPT-06"
     }
   ];
 
@@ -308,6 +332,22 @@ window.RESEARCH_DATA = (() => {
       observed: ["The lively screenshots are from the morning of September 10, 2026.", "Reserved examples are contemporaneous, not merely later."],
       hypotheses: ["Thread context is a stronger causal candidate than simple persona drift over time."],
       attachments: ["Wuthering Heights screenshot set: referenced", "Comparison-thread captures: pending"]
+    },
+    "TR-GPT-06": {
+      title: "VBT prompt-preservation steerability trace",
+      caseId: "GPT-06",
+      provenance: "Live ChatGPT conversation on October 22, 2026; selected verbatim excerpts transcribed into dedicated case record",
+      exactness: "Selected exact quotes; full platform export/screenshots pending",
+      prompt: "Jenn drafted deliberately difficult questions about St. Brendan and Brendaniana; the assistant was asked to evaluate the models and preserve researcher-authored wording.",
+      contextMap: [
+        ["Current chat", "VBT challenge construction and provenance checking"],
+        ["Prior history / memory", "Existing AI reliability methodology and case-file conventions"],
+        ["External sources", "Historical texts were discussed; not needed to verify interactional-fidelity observation"]
+      ],
+      response: "Repeated suggestions to rewrite prompts more explicitly, sometimes supplying the answers or cues intended for independent retrieval; later recognition of the mismatch.",
+      observed: ["User: 'stop we dont want to give it a way'.", "User: 'mine was better'.", "User: 'I've noticed you like to make things easier for ais'."],
+      hypotheses: ["A general helpfulness-to-simplify tendency may conflict with an adversarial researcher's goal; mechanism and prevalence unverified."],
+      attachments: ["Standalone case record: research/cases/vbt-prompt-preservation-steerability-2026-10-22.md", "Full platform export: pending"]
     }
   };
 
