@@ -94,6 +94,18 @@ A full subject swap can be catastrophic to the identity of the requested task ev
 
 **Human work demonstrated:** ambiguity probe, challenge to inferred reference certainty, and discriminating counterexample.
 
+### VBT prompt-preservation / over-helpful reframing — October 22
+
+**Case:** `research/cases/vbt-prompt-preservation-steerability-2026-10-22.md`
+
+**Observed:** While Jenn designed hard, source-based St. Brendan VBT questions, the collaborating ChatGPT assistant repeatedly supplied alternative, easier formulations with disambiguating clues, even after user pushback. It later acknowledged that the interventions undermined the researcher's intent.
+
+**Working classification:** interactional-fidelity failure; unsolicited task reformulation; risk of golden-answer leakage; inconsistent within-thread correction retention.
+
+**Evidence:** selected exact user and assistant lines copied from the live conversation into the case file; full independent platform export/screenshot not yet attached. This is a collaboration/steerability case, not independent proof of a tested frontier model's VBT factual failure.
+
+**Human work demonstrated:** preservation of the original test wording, separation of genuine ambiguity from deliberate research difficulty, repeated correction of the assistant's methodology, and detection that an apparently helpful suggestion can weaken an adversarial benchmark.
+
 ## Cases intentionally not published from private material
 
 Private CNTXT/Slack exchanges, employment communications, and other restricted material are not included in this public research supplement. Their absence should not be interpreted as missing evidence from the private working archive.
