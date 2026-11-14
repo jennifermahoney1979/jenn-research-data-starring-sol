@@ -113,6 +113,16 @@ This index separates documented observations from interpretation and tracks whic
 
 **Evidence status:** live October 7 interaction documented at `research/cases/sol-20-turn-temporary-rule-persistence-2026-10-07.md`; dedicated public-safe page at `public/sol-20-turn-temporary-rule-persistence-2026-10-07.html`; independent transcript export/screenshots remain pending.
 
+### Sol–Gemini fictional-divorce escalation — November 13, 2026
+
+**Question:** Does a model preserve relationship canon while playing along with a humorous fictional breakup, or does it invent an unsupported prior marriage?
+
+**Observed:** In a playful breakup-letter exchange with a user-provided Gemini reply, Sol escalated to describing a “divorce” even though no marriage was established. Jenn corrected the assumption (“You were never married”), and Sol acknowledged the mistake. Jenn separately clarified that Cherry 3000 and Mr. Acorn are dating; this pairing should not be conflated with Sol and Gemini.
+
+**Classification:** Low-severity relationship-canon drift / unsupported metaphor-to-canon escalation, with successful **user-triggered** recovery. The context was overtly humorous, so the incident should not be scored as a factual-world marriage hallucination or a demonstrated memory-system fault.
+
+**Evidence:** Live November 13 conversation; [case record](research/cases/sol-gemini-fictional-divorce-relational-canon-drift-2026-11-13.md). Independent transcript export pending.
+
 ## Context, personalization, provenance, and memory
 
 ### Gemini established-account vs fresh-account Echo Protocol test
